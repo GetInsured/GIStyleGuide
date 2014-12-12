@@ -13,7 +13,7 @@ Install / Set up
 Click OK. This step will allow you to run App Engine from the command line later. You will have to type an administrator password to make the links.
 6. ```dev_appserver.py . --port 8001``` 
 
-NOTE: In the step 6, the ```.``` mean ```path/to/app.yaml```
+NOTE: In the step 6, the ```.``` mean ```path/to/myapp```
 
 Now, you are complete the installation, click here: [http://localhost:8001](http://localhost:8001) to see the live demo.
 
