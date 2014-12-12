@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+<!--     <link href="css/gi-base.css" rel="stylesheet"> -->
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+    
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <a href="style-guide.html" class="navbar-brand" ><img class="logo" src="images/Get-Insured-Logo-grey.png" alt="GetInsured Logo"></a>
+      
+      <button style="margin-top: 20px" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse">
+      <nav role="navigation">
+            <ul class="sg-style navbar">
+                <li class="top-bar"><a href="css.html">Base CSS</a></li>
+                <li class="top-bar"><a href="components.html">Components</a></li>
+                <li class="top-bar"><a href="themes.html">Themes</a></li>
+                <li class="top-bar"><a href="visuals.html">Visuals</a></li>
+                <li class="top-bar"><a href="written.html">Written Style Guide</a></li>
+                <li class="top-bar"><a href="general.html">Team Process</a></li>
+            </ul>
+        </nav>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="section-intro" id="themes">
+    <div class="container-fluid">
+        <h1 class="header">Themes</h1>
+        <p>Learn how to create a theme from existing files.</p>
+    </div>
+</div>
+
+
+<div class="container-fluid center-page">    
+      
+    <section class="content" id="top-page">  
+        <div class="row-fluid">
+            <div class="span3">
+                <ol class="chapter">
+                    <li><a href="#create">Create a Theme</a></li>
+                    <li><a href="#less">LESS &amp; CSS Files</a></li>
+                    
+                </ol>
+            </div><!--/.span3-->
+
+            <div class="span9">
+
+                <div class="style-group" id="create">
+                    <h2>Create a Theme</h2>
+                    <p>The defining features of a theme can be found in the files that compose it. HTML provides the basic structure and content, while CSS provides the visuals. The CSS is where we define our theme.</p>
+
+                    <h3>CSS</h3>
+                    <p>The CSS allows us to keep consistency through the website without rewriting code over and over again. Make sure to define thematic colors and structures first, then apply them to your HTML.</p>
+                    <h4>Mixins and Colors</h4>
+                    <p>For this style guide, we defined mixins and specific colors for our pages that gave it a theme that we were trying to achieve.</p>
+
+                    <pre>
+.mixinGradientLight{
+    background-image: -webkit-linear-gradient(#F5F5F5 5%,#FFF 40%);
+    background-image: -moz-linear-gradient(#FFF 5%,#F5F5F5 40%);
+    background-image: -ms-linear-gradient(top,#FFF 5%,#F5F5F5 40%);
+}
+.mixinGradientLightReverse{
+    background-image: -webkit-linear-gradient(#fff 5%,#F5F5F5 40%);
+    background-image: -moz-linear-gradient(#F5F5F5 5%,#fff 40%);
+    background-image: -ms-linear-gradient(top,#F5F5F5 5%,#fff 40%);
+}
+.mixinBoxShadowHeader{
+    box-shadow: 0 1px 2px rgba(190, 190, 190, 0.2);
+    -webkit-box-shadow: 0 1px 2px rgba(190, 190, 190, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(190, 190, 190, 0.2);
+}
+.mixinBoxShadowFooter{
+    box-shadow: inset 0px 2px 0 rgba(255, 255, 255, 0.1),0 2px 2px rgba(0, 0, 0, 0.9);
+                    </pre>
+                    <div class="prettyprint message note"><strong>NOTE:</strong> The code above is LESS, which will be explained later on this page.</div>
+                    <h4>Formatting</h4>
+                    <p>We can also make sure that our format stays even acroos multiple pages. It is important to keep line spacing, padding, borders, and margins consistent.</p>
+                    <h4>Components</h4>
+                    <p>By pre-defining components, we can use them over and over again without having to worry about how they look or if they'll be consistent.</p>
+                    <p>For example, the way the style guide uses notes holds the same.</p>
+                    <div class="bs-docs-example">
+                        <div class="prettyprint message stop"><strong>STOP:</strong></div>
+                        <div class="prettyprint message note"><strong>NOTE:</strong></div>
+                        <div class="prettyprint message go"><strong>GO:</strong></div>
+                    </div>
+                </div>
+
+                <div class="style-group" id="less">
+                    <h2>LESS &amp; CSS Files</h2>
+                    <p>We use the <a href="less.css.org">CSS pre-processor</a> LESS to maintain and extend our CSS. To do this, we can use a variety of LESS compilers (listed below) to turn our LESS into CSS.</p>
+                    <ul>
+                        <li><a href="crunchapp.net">Crunch!</a> (Windows and Mac)</li>
+                        <li><a href="winless.org">winless.org</a> (Windows only)</li>
+                        <li><a href="https://incident57.com/codekit/">CodeKit</a> (Mac only)</li>
+                    </ul>
+                    <p>With LESS, we can use nesting, mixins, and variables to better maintain our CSS and make it more readable.</p>
+                    <h6 style="margin-bottom: -1px">style-guide.less</h6>
+                    <pre class="prettyprint">.sg-style{
+    font-size: 15px;
+    margin: 0px;
+    .brand-title{
+        clear: both;
+        font-size: 10px;
+        letter-spacing: 0.01em;
+    }
+}</pre>
+                    <h6 style="margin-bottom: -1px">style-guide.css</h6>
+                    <pre class="prettyprint css linenums"><span style="color:#82FF82">.sg-style</span> {
+    <span style="color:#3BFFFF">font-size</span>: <span style="color:#C499F2">15</span><span style="color: #D65CAB">px</span>;
+    <span style="color:#3BFFFF">margin</span>: <span style="color:#C499F2">0</span><span style="color: #D65CAB">px</span>;
+}
+<span style="color:#82FF82">.prettyprint.small-text.notices.back</span> {
+    <span style="color:#3BFFFF">clear</span>: <span style="color:#3BFFFF">both</span>;
+    <span style="color:#3BFFFF">font-size</span>: <span style="color:#C499F2">10</span><span style="color: #D65CAB">px</span>;
+    <span style="color:#3BFFFF">letter-spacing</span>: <span style="color:#C499F2">0.01</span><span style="color: #D65CAB">em</span>;
+}</pre>
+
+<p>For the CSS, follow these basic guidelines: </p>
+
+<ul>
+    <li>Follow <a href="https://www.drupal.org/node/1887862">CSS coding standards</a> when authoring your CSS.</li>
+    <li>Use valid CSS when possible. As an exception, use vendor-specific prefixes to take advantage of CSS3 features.</li>
+    <li>Minimize CSS hacks. The obvious exception is browsers-specific support, usually versions of IE. If possible, separate CSS hacks into separate sections or separate files.</li>
+    <li>All possible HTML elements should be styled by your theme (unless it is a child theme), both in post/page content and in comment content.</li>
+    <li>All possible HTML elements should be styled by your theme (unless it is a child theme), both in post/page content and in comment content.</li>
+</ul>
+                </div>
+       
+
+            </div><!--/.span9-->
+        </div><!--/.row-fluid-->
+
+        </section>  
+
+</div><!--/.container-fluid-->
+
+    <footer class="main-footer">
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+  </body>
+</html>

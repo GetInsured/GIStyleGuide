@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/gi-base.css" rel="stylesheet">
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+<nav class="navbar navbar-default sg-style" role="navigation">
+  <div class="container-fluid">
+    <div class="pull-left">
+      <a href="style-guide.html"class="navbar-brand" ><img src="images/Get-Insured-Logo.png" alt="GetInsured Logo"><span>GetInsured Style Guide v1.0</span></a>
+    </div>
+    <ul class="nav navbar-nav pull-right">
+        <li>
+          <a href="interaction-patterns.html">Interaction Patterns</a>
+        </li>
+        <li>
+          <a href="screen-patterns.html">Screen Patterns</a>
+        </li>
+        <li class="active">
+          <a href="design-components.html">Design Components</a>
+        </li>
+      </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    
+  	<div class="row-fluid">
+      <div class="span4">
+        <section class="sidebar-nav">  
+          <nav data-target="#navbar">
+                  <ul>
+                    <li><a href="global-structure">Global Structure</a></li>
+                    <li><a href="#grid-system">Grid System</a></li>
+                    <li><a href="#typography">Typography</a></li> 
+                    <li><a href="#iconography">Iconography</a></li> 
+                    <!-- <li><a href="#illustrations">Illustrations</a></li>    -->  
+                    <li class="top-page"><a href="#top-page">Back to Top</a></li>              
+                  </ul>
+          </nav>
+       </section>   
+      </div>
+      
+	  	<div class="span8">
+        <section class="content" id="top-page">  
+    		  <h1>Design Components</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+         
+        
+        
+
+
+        <div id="grid-system">
+          <h2>Grid System</h2>
+          <p>Our default grid system includes a <code>#sidebar</code> and <code>#rightpanel</code>.
+
+          <div class="bs-docs-example">
+            <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <h4>#sidebar</h4>
+                </div>
+
+                <div class="span9" id="rightpanel">
+                    <h4>#rightpanel</h4>
+                </div>
+            </div> 
+          </div>
+
+        <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;row-fluid&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span3&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;sidebar&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;h4&gt;</span>#sidebar<span style="color: #000080">&lt;/h4&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span9&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;rightpanel&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;h4&gt;</span>#rightpanel<span style="color: #000080">&lt;/h4&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span></pre>
+
+        </div><!--#structure-->
+        
+
+        <div id="typography">
+           <h2>Typography</h2>
+           <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.
+           <div class="bs-docs-example">
+            <h1 class="sg">h1. Heading 1</h1>
+            <h2 class="sg">h2. Heading 2</h2>
+            <h3 class="sg">h3. Heading 3</h3>
+            <h4 class="sg">h4. Heading 4</h4>
+            <h5 class="sg">h5. Heading 5</h5>
+            <h6 class="sg">h6. Heading 6</h6>
+          </div>
+            <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;bs-docs-example&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;h1&gt;</span>h1. Heading 1<span style="color: #000080">&lt;/h1&gt;</span>
+   <span style="color: #000080">&lt;h2&gt;</span>h2. Heading 2<span style="color: #000080">&lt;/h2&gt;</span>
+   <span style="color: #000080">&lt;h3&gt;</span>h3. Heading 3<span style="color: #000080">&lt;/h3&gt;</span>
+   <span style="color: #000080">&lt;h4&gt;</span>h4. Heading 4<span style="color: #000080">&lt;/h4&gt;</span>
+   <span style="color: #000080">&lt;h5&gt;</span>h5. Heading 5<span style="color: #000080">&lt;/h5&gt;</span>
+   <span style="color: #000080">&lt;h6&gt;</span>h6. Heading 6<span style="color: #000080">&lt;/h6&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+            </pre>
+        </div>
+           
+        
+        <div id="iconography">
+            <h2>Iconography</h2>
+            <p>FontAwesome are used as the icon set. (<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/" target="_blank">FontAwesome 3.2.1</a>)</p>
+            <p>Just add <code>&lt;link href="css/font-awesome.css" rel="stylesheet"&gt;</code> to your <code>&lt;head&gt;</code>. It's faster than a cat saying 'meow.'
+            <div class="bs-docs-example">
+               <p>I <i class="icon-heart"></i> <i class="icon-music"></i>.</p>
+               <p>Muggles don't <i class="icon-remove"></i> know <i class="icon-magic"></i>.</p>
+            </div>
+            <pre class="prettyprint lineums"><span style="color: #000080">&lt;p&gt;</span>I <span style="color: #000080">&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-heart&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span> <span style="color: #000080">&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-music&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>.<span style="color: #000080">&lt;/p&gt;</span>
+<span style="color: #000080">&lt;p&gt;</span>Muggles don&#39;t <span style="color: #000080">&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-remove&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span> know <span style="color: #000080">&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-magic&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>.<span style="color: #000080">&lt;/p&gt;</span>
+</pre>
+        </div> 
+       <!--  
+        <div id="illustrations">
+            <h2>Illustrations</h2>
+            <div class="bs-docs-example">
+               
+            </div>
+            <pre class="prettyprint lineums">
+                
+            </pre>
+        </div>      -->      
+                   
+        </section>  
+    	</div><!--/.span8-->
+
+	</div><!--/.row-fluid-->
+
+  <footer>
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+  </body>
+</html>

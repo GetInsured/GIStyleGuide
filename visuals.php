@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+<!--     <link href="css/gi-base.css" rel="stylesheet"> -->
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+    
+<?php 
+    include "nav-bar.php";
+?>
+
+
+<div class="section-intro" id="visuals">
+    <div class="container-fluid">
+        <h1 class="header">Visuals</h1>
+        <p>The GetInsured look, from icons to our very own mascot.</p>
+    </div>
+</div>
+
+
+<div class="container-fluid center-page">    
+      
+    <section class="content" id="top-page">  
+        <div class="row-fluid">
+            <div class="span3">
+                <ol class="chapter">
+                    <li><a href="#geeman">Geeman</a></li>
+                    <li><a href="#icons">Iconography</a></li>
+                    <li><a href="#sprites">Sprites</a></li>
+                    <li><a href="#placeholders">Placeholder Images</a></li>
+                </ol>
+            </div><!--/.span3-->
+
+            <div class="span9">
+
+                <div class="style-group" id="geeman">
+                    <h2>Geeman</h2>
+                    <p>Geeman is used throughout the GetInsured platform. He introduces a face to GI and is here to help consumers get insured.</p>
+                    <img src="images/geeman-shopsmart.png">
+                    <img src="images/gee-man.png">
+
+                </div>
+                <div class="style-group" id="icons">
+                    <h2>Iconography</h2>
+                    <p>The icons GetInsured uses are very simple and to the point.</p>
+
+                    <li>Icons are generally colorless with a blue background.</li>
+                    <li>Be minimalistic when it comes to portraying your ideas.</li>
+                    <li>Don't overcomplicate with too many details</li>
+
+                    <pre class="prettyprint icons linenums"><img class="icons"class src="images/icons/stm-lost-coverage.png"><img id="icon-hide" class="icons" src="images/icons/stm-divorce.png"><img class="icons" src="images/icons/stm-married.png"><img id="icon-hide" class="icons" src="images/icons/stm-baby.png"><img id="icon-hide" class="icons" src="images/icons/stm-dependent.png"><img id="icon-hide" class="icons" src="images/icons/stm-household-income.png"><img class="icons" id="icon-hide" src="images/icons/stm-moved-zip.png"><img id="icon-hide" class="icons" id="icon-hide" src="images/icons/stm-errors-enrollment.png"><img class="icons" id="icon-hide" src="images/icons/stm-cobra.png"></pre>
+
+                </div>
+
+                <div class="style-group" id="sprites">
+                    <h2>Sprites</h2>
+                    <p>With the number of images used on the GetInsured website, it is important to find ways to reduce the loading time to improve the responsiveness of the webpage.</p>
+                    <p>Sprites will allow us to reduce the number of HTTP requests that are made for each image and improve the overall performance. They do this by holding all the images used in one big master image, and then uses CSS and HTML to get the correct portions of the master image to display on the website. </p>
+
+
+
+                    <pre style="width: 160px;height: 220px"class="icon_background master-image linenums">Master Image:       
+<img src="images/sprite-example.png"></pre>
+                    
+                    <p>There are a many places you can use to generate a sprite master image along with the corresponding background position values. To generate the above example, we used <a href="http://csssprites.com/">CSS Sprites</a>.  Once the image is generated, use the background positions given to correctly position the elements in CSS/LESS. The resulting sprite is shown below (hover over it!). </p>
+
+                    <pre style="width: 85px; height: 130px" class="icon_background sprites linenums">Sprite:<div class="sprite coinsurance"></div></pre>
+
+                    <div class="prettyprint message note" style="margin: 15px 0 15px 0"><strong>NOTE:</strong> The pie chart and the check mark are from the <strong>same</strong> master image</div>
+
+                    <p>The HTML for sprites is extremely simple. You can use <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;li&gt;</code>, and many others as long as you are changing the background image in your CSS/LESS.</p>
+                    <pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sprite coinsurance&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;/div&gt;</span></pre>
+                
+                    <p> The CSS/LESS looks complicated, but in reality it isn't that bad. Just a couple things to take note. 
+                        <li>The position values are negative because you need to move the master image up and to the left to make sure you are correctly positioned on the right sprite.</li>
+                        <li>Make sure you have the correct height and width or else you will end up displaying more/less than you want.</li>
+                        <li>To get the sprite to look good, it will take a little tinkering with the values.</li>
+                    </p>
+                <pre class="prettyprint css linenums"><span style="color:#82FF82">.sprite.coinsurance</span> {
+    <span style="color:#3BFFFF">background</span>: <span style="color:#3BFFFF">url</span>( <span style="color:#F0AB35">../images/sprite-example.png</span>) <span style="color:#C499F2">-45</span><span style="color: #D65CAB">px</span> <span style="color:#C499F2">-65</span><span style="color: #D65CAB">px</span>;
+    <span style="color:#3BFFFF">height</span>: <span style="color:#C499F2">70</span><span style="color: #D65CAB">px</span>;
+    <span style="color:#3BFFFF">width</span>: <span style="color:#C499F2">70</span><span style="color: #D65CAB">px</span>;
+}
+<span style="color:#82FF82">.sprite:hover</span> {
+    <span style="color:#3BFFFF">background</span>: <span style="color:#3BFFFF">url</span>( <span style="color:#F0AB35">../images/sprite-example.png</span>) <span style="color:#C499F2">0</span><span style="color: #D65CAB">px</span> <span style="color:#C499F2">10</span><span style="color: #D65CAB">px </span><span style="color: #3BFFFF">no-repeat</span>;
+    <span style="color:#3BFFFF">height</span>: <span style="color:#C499F2">70</span><span style="color: #D65CAB">px</span>;
+    <span style="color:#3BFFFF">width</span>: <span style="color:#C499F2">70</span><span style="color: #D65CAB">px</span>;
+}</pre>              
+                </div>
+                <div class="style-group" id="placeholders">
+                    <h2>Placeholder Images</h2>
+                    <p>Placeholder images are exactly what they sound like. Use them when you don't have any images to display, but want someothing to hold their place.</p>
+                    
+                    <div class="bs-docs-example">
+                        <div><img class="placeholders" src="http://placehold.it/560x150"> </div>
+                        <div><img class="placeholders" src="http://placehold.it/350x250"> <img class="placeholders" src="http://placehold.it/200x250"> </div>
+                    </div>
+                    <pre class="prettyprint linenums"><span style="color: #000080">&lt;div&gt;</span>
+   <span style="color: #000080">&lt;img</span><span style="color: #008080"> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;placeholders&quot;</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;http://placehold.it/560x150&quot;</span><span style="color: #000080">&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;div&gt;</span>
+   <span style="color: #000080">&lt;img</span><span style="color: #008080"> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;placeholders&quot;</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;http://placehold.it/350x250&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;img</span><span style="color: #008080"> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;placeholders&quot;</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;http://placehold.it/200x250&quot;</span><span style="color: #000080">&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+<div class="prettyprint message go linenums"><strong>LOOK:</strong> These placeholders have their dimensions right on them! We got these from <a href="Placehold.it">Placehold.it</a></div>
+<div class="prettyprint message stop"><strong>STOP:</strong> Be cautious when using these. They are responsive and will shrink if the window gets too small, so the dimensions, in some cases, might not be correct.</div>
+                </div>
+
+            </div><!--/.span9-->
+            
+        </div><!--/.row-fluid-->
+        
+        </section>  
+
+</div><!--/.container-fluid-->
+
+    <footer class="main-footer">
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+  </body>
+</html>

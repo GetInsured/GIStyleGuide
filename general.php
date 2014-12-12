@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+<!--     <link href="css/gi-base.css" rel="stylesheet"> -->
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+    
+<?php
+  include "nav-bar.php";
+?>
+
+<div class="section-intro" id="general">
+  <div class="container-fluid">
+    <h1 class="header">Team Process</h1>
+    <p>What to do during development for product managers, the QA team, and the UI/UX team.</p>
+  </div>
+</div>
+
+
+<div class="container-fluid center-page">    
+      
+    <section class="content" id="top-page">  
+        <div class="row-fluid">
+            <div class="span3">
+                <ol class="chapter">
+                    <li><a href="#best-practices">Best Practices</a></li>
+                    <li><a href="#getting-started">Getting Started</a></li>
+                    <li><a href="#pms">Product Managers</a></li>
+                    <li><a href="#ui">UI/UX</a></li>
+                    <li><a href="#qa">QA</a></li>
+                    <li><a href="#engineering">Engineering</a></li>
+                    <li><a href="#deployment">Deployment</a></li>
+                    <li><a href="#final-note">A Final Note From UI</a></li>
+                </ol>
+            </div><!--/.span3-->
+
+            <div class="span9">
+
+              <div class="style-group" id="best-practices">
+                <h2>General Best Practices</h2>
+                <p>We all want to create a great product with great people. </p>
+                <ol>
+                    <li>Keep things consistent. Reuse and Recycle.</li>
+                    <div class="prettyprint message go"><strong>LOOK: </strong>Consistency is a reoccuring theme throughout the whole process. All teams will eventually be double and triple checking the <a href="components.html">pattern library</a>.</div>                  
+                    <li>Plan things out before hand. Everything will come easier that way.</li>
+                    <li>Collaborate and talk with other teams. Get their input. Two minds are better than one.</li>
+                    <li>If you have any questions, ask them! One of the worst feelings is working without clarity.</li>
+                    <li>Refer back to old work and code if you're confused. Look for any clarifying comments that might give you a little help.</li>
+                </ol>
+              </div>
+
+              <div class="style-group" id="getting-started">
+                <h2>Getting Started</h2>
+                <p>What to do and where to go when a problem needs to be solved or you have a good idea that you want to see implemented.</p>
+                <h3>The First Steps</h3>
+                <p>Once your idea is conceived, there are a few steps that need to take place before any work with the other teams takes place.</p>
+                <ol>
+                  <li>Know the following about your user and keep them in mind always</li>
+                      <ul>
+                        <li>Needs</li>
+                        <li>Knowledge</li>
+                        <li>Preferences</li>
+                        <li>Limitations</li>
+                        <li>Expectations</li>
+                      </ul>
+                    <li>Specify a goal</li>
+                    <li>Choose the best approach</li>
+                    <li>Prepare</li>
+                </ol>
+                <h3 id="prototype">Prototyping</h3>
+                <p>After validating the project, we can begin prototyping. Wireframes are fine, but <a href="http://www.uxforthemasses.com/rapid-prototyping/">this</a> says otherwise. Ditch the slow wireframing for a more rapid prototyping process by sketching or making a quick mockup in HTML.</p>
+                <h3 id="leanux">Lean UX and Specifications</h3>
+                <p>When coming up with how the UX will work and what the UI will look like, refer to the <a href="http://wiki.fluidproject.org/display/fluid/UX+Walkthrough+Protocols+and+Checklists">UX Walkthrough</a> and <a href="http://luxr.co/10_principles_of_lean_user_experience">10 Principles for Lean</a>.</p>
+                <p>Our specifications will outline what our product needs to do and how we will determine if it is a success or not. The specifications will consist of the following:</p>
+                <ul>
+                  <li>Introduction - a quick and easy description</li>
+                  <li>Project Objectives - what problem we're trying to solve or what functionality we are trying to achieve</li>
+                  <li>Timeline - a general overview of important dates</li>
+                  <li>Design Specifications - what the product will look like (see the above regarding the lean ux)</li>
+                  <li>Site Map - where our project fits in to the existing site</li>
+                  <li>Logic Diagrams - a walkthrough of the product, outlining all possible paths</li>
+                  <li>Maintenance - how the site will be maintained after deployment</li>
+                  <li>Success Criteria - how we determine if the whole process was an overall success</li>
+                </ul>
+
+               </div>
+
+              <div class="style-group" id="pms">
+                <h2>Process for Product Managers</h2>
+                <p>Key questions to be answered and ideas to keep in mind going forward:</p>
+                <ul>
+                  <li>Is the user interaction for the prototype optimal?</li>
+                  <li>Is my idea feasible to implement?</li>
+                  <li>Is there anything I can do to make our jobs easier?</li>
+                  <li>Am I being consistent with the other products?</li>
+                  <li>Can I do anything during development to make later processes easier?</li>
+                </ul>
+
+                <p>Use the general guidelines below to answer these questions and any more that might arise during development.</p>
+
+                <div class="prettyprint message process">
+                  <h3>Review with UI/UX</h3>
+                  <p>Talking with UI/UX hashes out the details of how the user interaction will work. They will tell you if your idea is optimal and if it is even possible to implement at all. From this the specs for the product will be created and UI/UX can begin on production.</p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Check for Reusable Code</h3>
+                  <p>First, see if there is any application that has components similar to what you are trying to implement. If there is, check the code and see if any of it is reusable. This will cut down not only on implementation, but also the time QA spends looking for bugs.</p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Check Pattern Library</h3>
+                  <p>This step will help make sure that the product stays consistent with all the GetInsured products already deployed. We want to keep the brand consistent across all platforms. Make sure to reference the <a href="components.html">pattern library</a> frequently during the process to make sure the teams don't have to redo work that is inconsistent. Also be sure to check if the text follows the <a href="written.html">written style guide</a>.</p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Guerilla Testing</h3>
+                  <p>During the development process, guerilla testing allows us to reliably get feedback that can quickly be turned into improvements to our UX. </p>
+
+                  <p>It involves setting a series of tasks for participants to complete and noting any problems they encounter. </p>
+
+                  <h4>Recruitment</h4>
+                  <p>We can gather participants from any number of places:</p>
+                  <ul>
+                    <li>Classified Ads</li>
+                    <li>Other departments</li>
+                    <li>Family</li>
+                    <li>Friends</li>
+                  </ul>
+                  <div class="prettyprint message note"><strong>Note</strong>: Because GetInsured caters to wide range of people, it is important to get a diverse group of participants.</div>
+
+                  <h4>Questions</h4>
+                  <p>At the end of the testing, it is important to ask questions:</p>
+                  <ul>
+                    <li>Were the participants able to complete the task?</li>
+                    <li>How long did the task take?</li>
+                    <li>Were there errors? How many? How bad were they?</li>
+                    <li>Was the user satisfied with their experience?</li>
+                  </ul>
+                  <p>By answering the questions above, we can see what can be improved in our UX and what specific changes we need to make.</p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Communicate with UI/UX</h3>
+                  <p>There should be communication throughout the whole process, but the end is where everything needs to be discussed in order to tie up all the loose ends of the project. Everything from specs to testing. Once this is over, the product will be sent to QA to test, and then eventually to deployment.</p>
+                </div>
+      
+              </div>
+
+              <div class="style-group" id="uiux">
+                <h2>Process for UI/UX</h2>
+
+                <p>The goal is to create a seamless user experience that meets all the specs brought up in the beginning of development.</p>
+
+                <div class="prettyprint message process">
+                  <h3>Research and Gather Information</h3>
+                  <p>Every UX designer needs to be a kind of detective in the early stage of a project. We need to find out as much as we can about the three P's (people, problem, project). Get to know your audience and from that, you can cater the product to suit their needs. Activites in this stage include:</p>
+                  <ul>
+                    <li>Meeting with the client and identifying the product’s requirements</li>
+                    <li>Benchmarking and trend analysis </li>
+                  </ul>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Prototyping </h3>
+                  <p>This second prototyping stage allows us to go from the abstract idea that we have refined with the PM to a concrete thing we can see. This thing can be numerous things: a quick sketch on paper, a mockup on any illustrator, or a wireframe that depicts page layout. </p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>UI Checklist</h3>
+                  <p>During devlopment, there are things to make sure we check to make sure that the product works across all platforms, and is consistent and optimal.</p>
+
+                  <ul style="list-style-type: decimal;">
+                    <li>Check the <a href="componentes.html">pattern library</a> for reusable code</li>
+                    <li>Check old code for anything reusable</li>
+                    <li>Check the <a href="visuals.html">visuals page</a> to make sure your application looks up to snuff</li>
+                    <li>Test on 3 browsers as you develop</li>
+                    <li>Test with no styles to make sure the content is there</li>
+                    <li>Use sprites to optimize the loading of the page</li>
+                    <li>Use <a href="http://www.responsinator.com/">Responsinator</a> to test your site on mobile, but be sure to double check with actual devices before deployment</li>
+                  </ul>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Analyze, Iterate, Improve</h3>
+                  <p>Much of this step will coincide with the guerilla testing set up by the PM. Work with them to develop tests that will efficiently use time and resources.</p>
+                  <p>Once testing is done, it is your job to use the data collected to best improve the user experience.</p>
+                  <p>Repeat the process until the results from the testing say that the application is where it needs to be.</p>
+                </div>     
+              </div>
+
+              <div class="style-group" id="engineering">
+                <h2>Process for Engineering</h2>
+                <p>The most important thing here is to follow the specs and make sure the product does what it is supposed to. Being methodical about the way we go about this will help ensure that.</p>
+
+                <div class="prettyprint message process">
+                  <h3>Understand and Refine the Design</h3>
+                  <p>After prototyping, the PM and UI/UX team will come to you with their design and specs. Give them feedback regarding implementation and what aspects might pose future problems. </p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Check With UI/UX and PM</h3>
+                  <p>Be sure to update the other teams every step of the way. Let them know about any changes you think of or any improvements that can be made.</p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Implement</h3>
+                  <p>text</p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>QA and Iterating</h3>
+                  <p>Once finished, send the product to QA for testing. Fix any bugs that come up and iterate over again.</p>
+                </div>               
+
+              </div>
+
+              <div class="style-group" id="qa">
+                <h2>Process for QA</h2>
+
+                <p>The QA process is really just a big checklist of things to go through to ensure that the product has no design flaws or bugs before we deploy. During the process, we discover if the code works the way it should, and if we need to make minor adjustments. Being thorough and efficient is key to ensuring a successful, flawless deployment.</p>
+
+                <div class="prettyprint message process">
+                  <h3>Validate W3C</h3>
+                  <p>First things first, check the markup validity of our HTML. That can be done easily at
+                    <a href="http://validator.w3.org/">www.validator.w3.org</a></p>
+                    <div class="prettyprint message go"><strong>LOOK: </strong>Validating our code helps improve and ensure the quality of the code, and save a lot of time and money. Want to know why? Check <a href="http://validator.w3.org/docs/why.html">here</a>.</div>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Consistency</h3>
+                  <p>This is key. All products need to look the same at deployment, so double and triple checking is very much necessary. Refer to the <a href="components.html">pattern library</a> and past products to make sure that this one is inline.</p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Check Browsers</h3>
+                  <p>Make sure all aspects of the product run smoothly on all three of the main browsers:</p>
+                  <ul>
+                    <li><img class="browser-logo" src="images/chrome.png">Google Chrome</li>
+                    <li><img class="browser-logo" src="images/firefox.png">Mozilla Firefox</li>
+                    <li><img class="browser-logo" src="images/ie.png">Internet Explorer</li>
+                  </ul>                                     
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+                <div class="prettyprint message process">
+                  <h3>Testing</h3>
+                  <p>Run the usual testing process and report any findings to the responsible team.</p>
+                </div>
+
+                <div class="icon-centered"><i class="icon-arrow-down"></i></div>
+
+
+                <div class="prettyprint message process">
+                  <h3>Insurmountable Problems</h3>
+                  <p>If you find a huge bug or design flaw, bring it to UI/UX immediately. Explain to them what the issue is and what needs to be done. Set a course of action to get the issue resolved as efficiently as possible through strategic planning and problem solving.</p>
+                </div>
+      
+              </div>
+
+              <div>
+
+              </div>
+
+              <div class="style-group" id="deployment">
+                <h2>Deployment</h2>
+                <h3>Before</h3>
+                <p>Once the product is done, it is important to look back and make sure the teams accomplished what they set out to accomplish before deploying. This is the final stage where the teams come together to talk over what they've created.</p>
+                <ul style="list-style-type: decimal">
+                  <li>Is everything to spec?</li>
+                    <ul><li>If not, make sure it was communicated through the process</li></ul>
+                  <li>Does the product work across platforms? </li>
+                  <li>Is the product consistent with itself and the GetInsured brand?</li>
+                </ul>
+
+                <h3>During</h3>
+
+               <p>Now that the above has been taken care of, another set of questions arise during the actual product deployment.</p>
+
+                <ul style="list-style-type: decimal">
+                  <li>If the product breaks, what do we do?</li>
+                  <li>Do we have any fixes in place to fall back on?</li>
+                  <li>Is it possible to rollback the release date?</li>
+                </ul>
+
+                <h3>After</h3>
+                <p>After the deployment is over, it's time to take a deep breath and congratulate each other on a job well done!</p>
+                  <div class="prettyprint message stop">
+                    <p><strong>STOP: </strong>Even after deployment, there is still work to be done. The product meeting the specs doesn't necessarily mean that the product satisfies the customer. Check back with them and get their feedback. And even if they are satisfied, there is always room for improvement, so don't get complacent. Check out the comic to get a better understanding of what I'm talking about.</p>
+                   <img src="images/software_development-getting-it-wrong.jpg">
+                  </div>
+              </div>
+
+              <div class="style-group" id="final-note">
+                <h2>A Final Note From UI</h2>
+                <p>This is a living document. If you have any feedback, feel like we can improve the style guide in anyway, or have something to add, please don't hesitate to tell us. We are all ears.</p>
+              </div>
+            </div><!--/.span9-->
+        </div><!--/.row-fluid-->
+
+        </section>  
+
+</div><!--/.container-fluid-->
+
+    <footer class="main-footer">
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+  </body>
+</html>

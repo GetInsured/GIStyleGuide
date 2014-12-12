@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/gi-base.css" rel="stylesheet">
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+    
+<div class="sg-style">
+    <div class="container-fluid">
+      <a href="style-guide.html"class="navbar-brand" ><img src="images/Get-Insured-Logo.png" alt="GetInsured Logo"></a>
+      <h1>Web Fundamentals</h1>
+    </div>
+</div><!-- /.container-fluid -->
+
+<div class="primary-nav">
+    <div class="container-fluid">
+        <nav role="navigation">
+            <ul class="nav navbar-nav">
+                <li><a href="general.html">Best Practices</a></li>
+                <li><a href="css.html">Base CSS</a></li>
+                <li><a href="layouts.html">Layouts</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="screens.html">Screen Patterns</a></li>
+                <li><a href="written.html">Written Style Guide</a></li>
+                <li><a href="themes.html">Themes</a></li>
+            </ul>
+        </nav>
+    </div>
+</div><!--/.primary-nav-->
+
+
+<div class="section-intro" id="visual">
+    <h1>Visual Style Guide</h1>
+    <p>Overview of templates and flexible structures.</p>
+
+</div>
+
+
+<div class="container-fluid center-page">    
+      
+    <section class="content" id="top-page">  
+        <div class="row-fluid">
+            <div class="span3">
+                <ol class="chapter">
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#icons">Icons</a></li>
+                    <li><a href="#illustrations">Illustrations</a></li>
+                    <li><a href="#written">Written Style Guide</a></li>
+                </ol>
+            </div><!--/.span3-->
+
+            <div class="span9">
+                <div class="style-group" id="typography">
+                <h2>Typography</h2>
+                
+                <h3>Headings</h3>
+                <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
+        <div class="bs-docs-example">
+            <h1 class="sg">h1. Heading 1</h1>
+            <h2 class="sg">h2. Heading 2</h2>
+            <h3 class="sg">h3. Heading 3</h3>
+            <h4 class="sg">h4. Heading 4</h4>
+            <h5 class="sg">h5. Heading 5</h5>
+            <h6 class="sg">h6. Heading 6</h6>
+        </div>
+
+
+            <h3>Body Copy</h3>
+            <p>Global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>20px</strong>. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).</p>
+            
+            <div class="bs-docs-example">
+                <p>I used to write. I used to write letters. I used to sign my name. I used to sleep at night. Before the flashing light settled deep in my brain. But by the time we met. By the time we met the times had already changed. So I never wrote a letter. I never took my true heart, I never wrote it down. So when the lights cut out. I was lost standing in the wilderness downtown.</p>
+            </div>
+            <pre class="prettyprint lineums"><span style="color: #000080">&lt;p&gt;</span>...<span style="color: #000080">&lt;/p&gt;</span></pre>
+
+
+                </div><!--/.style-group-->
+
+
+        <div class="style-group" id="buttons">
+            <h2>Buttons</h2>
+            <p>Button styles can be applied to anything with the .btn class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+
+            <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button type="button" class="btn">Default</button></td>
+                <td><code>btn</code></td>
+                <td>Standard gray button with gradient</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-primary">Primary</button></td>
+                <td><code>btn btn-primary</code></td>
+                <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="icons">
+            <h2>Icons</h2>
+            <p>FontAwesome are used as the icon set. (<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/cheatsheet/" target="_blank">FontAwesome 3.2.1</a>)</p>
+
+            <p>To add the fonts to CSS, do one of the following:
+            <ul>
+                <li>Add <code>&lt;link href="css/font-awesome.css" rel="stylesheet"&gt;</code> to your <code>&lt;head&gt;</code></li>
+                <li>Or <code>@import "path/to/font-awesome/less/font-awesome.less";</code> to your LESS file.</li>
+            </ul>
+
+            <p>To add it into your HTML, just add <code>&lt;i class="icon-name"&gt;&lt;i&gt;</code>. Here are the most common icons used in the platform.</p>
+
+            <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>FontAwesome</th>
+                <th>CSS Code</th>
+                <th>Class Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="icon-cog"></i></td>
+                <td><code>\f013</code></td>
+                <td>icon-cog</td>
+              </tr>
+              <tr>
+                <td><i class="icon-ok"></i></td>
+                <td><code>\f00c</code></td>
+                <td>icon-ok</td>
+              </tr>
+              <tr>
+                <td><i class="icon-dashboard"></i></td>
+                <td><code>\f0e4</code></td>
+                <td>icon-dashboard</td>
+              </tr>
+              <tr>
+                <td><i class="icon-info-sign"></i></td>
+                <td><code>\f05a</code></td>
+                <td>icon-info-sign</td>
+              </tr>
+              <tr>
+                <td><i class="icon-envelope"></i></td>
+                <td><code>\f0e0</code></td>
+                <td>icon-envelope</td>
+              </tr>
+              <tr>
+                <td><i class="icon-pencil"></i></td>
+                <td><code>\f040</code></td>
+                <td>icon-pencil</td>
+              </tr>
+              <tr>
+                <td><i class="icon-phone"></i></td>
+                <td><code>\f095</code></td>
+                <td>icon-phone</td>
+              </tr>
+              <tr>
+                <td><i class="icon-home"></i></td>
+                <td><code>\f015</code></td>
+                <td>icon-home</td>
+              </tr>
+              <tr>
+                <td><i class="icon-lock"></i></td>
+                <td><code>\f023</code></td>
+                <td>icon-lock</td>
+              </tr>
+              <tr>
+                <td><i class="icon-ok-circle"></i></td>
+                <td><code>\f05d</code></td>
+                <td>icon-ok-circle</td>
+              </tr>
+              <tr>
+                <td><i class="icon-calendar"></i></td>
+                <td><code>\f073</code></td>
+                <td>icon-calendar</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="style-group" id="illustrations">
+            <h2>Illustrations</h2>
+            <p>Geeman is used throughout the GetInsured platform. He introduces a face to GI and is here to help consumers get insured. </p>
+            </p>
+        </div>
+
+        <div class="style-group" id="written">
+            <h2>Written Style Guide</h2>
+            <h3>Section Titles</h3>
+            <p>Titles are always camel case.</p>
+
+            <div class="bs-docs-example">
+                <span>Find Humility Even in Success</span>
+            </div>
+
+            <h3>Linking to External Sites</h3>
+            <p>Always include <code>_target="blank"</code> to the <code>&lt;a&gt;</code> tag.</p>
+        </div>
+
+            </div><!--/.span9-->
+        </div><!--/.row-fluid-->
+
+        </section>  
+
+</div><!--/.container-fluid-->
+
+    <footer>
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+  </body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+<!--     <link href="css/gi-base.css" rel="stylesheet"> -->
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+    
+<div class="sg-style">
+    <div class="container-fluid txt-center">
+      <a href="https://www.getinsured.com"class="navbar-brand" ><img src="images/Get-Insured-Logo-grey.png" alt="GetInsured Logo"></a>
+       
+       <nav role="navigation">
+            <ul class="sg-style navbar">
+                <li class="active top-bar"><a href="css.html">Base CSS</a></li>
+                <li class="top-bar"><a href="layouts.html">Layouts</a></li>
+                <li class="top-bar"><a href="components.html">Components</a></li>
+                <li class="top-bar"><a href="forms.html">Forms</a></li>
+                <li class="top-bar"><a href="screens.html">Screen Patterns</a></li>
+                <li class="top-bar"><a href="themes.html">Themes</a></li>
+                <li class="top-bar"><a href="illustrations.html">Illustrations</a></li>
+                <li class="top-bar"><a href="written.html">Written Style Guide</a></li>
+                <li class="top-bar"><a href="general.html">Best Practices</a></li>
+            </ul>
+        </nav>
+        <h3 class="brand-title"><a href="style-guide.html" class="special-link">User Experience Style Guide</a></h3>
+    </div>
+</div><!-- /.sg-style -->
+
+<div class="section-intro" id="screens">
+    <div class="container-fluid">
+        <h1>Screen Patterns</h1>
+        <p>These are all the templates that display variations in content across multiple appearances in the design while ensuring a consistent visual appearance.</p>
+    </div>
+</div>
+
+
+<div class="container-fluid center-page">    
+      
+    <section class="content" id="top-page">  
+        <div class="row-fluid">
+            <div class="span3">
+                <ol class="chapter">
+                    <li><a href="#global-structure">Global Table Structure</a></li>
+                    <li><a href="#sidebar-details">Sidebar Nav &amp; Details</a></li>
+                    <li><a href="#refine-results">Refine Results &amp; Table</a></li>
+                    <li><a href="#form-actions">Form Actions</a></li>
+                </ol>
+            </div><!--/.span3-->
+
+            <div class="span9">
+
+        <div class="style-group" id="grid-system">
+            <h2>Global Table Structure</h2>
+            <p>Our default grid system includes a <code>#sidebar</code> and <code>#rightpanel</code>. Both are wrapped around a <code>.row-fluid</code>.</p>
+            <h4>Sidebar</h4>
+            <ul>
+                <li>There is always a <code>.span3</code> with an id <code>#sidebar</code> attached to it.</li>
+                <li>The header is wrapped around an <code>h4</code> with <code>.header</code>.</li>
+            </ul>
+
+            <h4>Right Panel</h4>
+            <ul>
+                <li>There is always a <code>.span9</code> with <code>#rightpanel</code> attached to it.</li>
+                <li>The header is wrapped around a <code>div.header</code> and a <code>h4</code> with <code>.header</code>.</li>
+            </ul>
+
+
+            <div class="bs-docs-example">
+            <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <h4>#sidebar</h4>
+                </div>
+
+                <div class="span9" id="rightpanel">
+                    <h4>#rightpanel</h4>
+                </div>
+            </div> 
+          </div>
+          <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;row-fluid&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span3&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;sidebar&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;h4</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>sidebar<span style="color: #000080">&lt;/h4&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span9&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;rightpanel&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;h4</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pull-left&quot;</span><span style="color: #000080">&gt;</span>rightpanel<span style="color: #000080">&lt;/h4&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+
+        
+        <h3>Editing Table Details</h3>
+        <p>asdf</p>
+        </div><!--/.style-group-->
+                
+        <div class="style-group" id="sidebar-details">
+            <h2>Sidebar Navigation &amp; Details</h2>
+
+            <p>This would be used to show a users detailed information using a left navigation.</p>
+            <h4>Navigational Sidebar</h4>
+            <ul>
+                <li>Use <code>.active</code> on the <code>li</code> in order to show that it's active.</li>
+                <li>The header is wrapped around an <code>h4</code> with <code>.header</code>.</li>
+                <li>To include the navigational list, wrap it in a <code>&lt;ul&gt;</code> with <code>.nav</code> and <code>.nav-list</code>.</li>
+            </ul>
+
+            <h4>Right Panel</h4>
+            <ul>
+                <li>To create a list of information, make sure you have a <code>&lt;form&gt;</code> around a <code>table</code> with <code>.form-horizontal</code>.</li>
+                <li>To align the Edit button, include it inside the <code>div.header</code> inside <code>&lt;a&gt;</code> tag with <code>.btn .btn-small .pull-right</code>.</li>
+            </ul>
+            <div class="bs-docs-example">
+            <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <div class="header">
+                        <h4>Header</h4>
+                    </div>
+                        <ul class="nav nav-list">
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active"><a href="#">My Details</a></li>
+                            <li><a href="#">My Inbox</a></li>
+                            <li><a href="#">Account Settings</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                </div>
+                <div class="span9" id="rightpanel">
+                    <div class="header">
+                        <h4 class="pull-left">Issuer Details</h4>
+                        <a class="btn btn-small pull-right" href="#">Edit</a>
+                    </div>
+                    <form class="form-horizontal">
+                        <table class="table table-border-none verticalThead">
+                            <tbody>
+                                <tr>
+                                    <th class="txt-right span4">Name</th>
+                                    <td>
+                                        <strong>Linnea's Cafe</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="txt-right span4">Group ID</th>
+                                    <td>
+                                        <strong>987654321</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="txt-right span4">Address 1</th>
+                                    <td>
+                                        <strong>1110 Garden St</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="txt-right span4">Address 2</th>
+                                    <td>
+                                        <strong>&nbsp;</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="txt-right span4">City</th>
+                                    <td>
+                                        <strong>San Luis Obispo</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="txt-right span4">State</th>
+                                    <td>
+                                        <strong>CA</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="txt-right span4">Zip Code</th>
+                                    <td>
+                                        <strong>93401</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div><!--/.row-fluid-->
+        </div><!--/bs-docs-->
+
+        <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;row-fluid&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span3&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;sidebar&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;h4&gt;</span>Header<span style="color: #000080">&lt;/h4&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;nav nav-list&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Dashboard<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;active&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>My Details<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>My Inbox<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Account Settings<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Contact Us<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;/ul&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span9&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;rightpanel&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;h4</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pull-left&quot;</span><span style="color: #000080">&gt;</span>Issuer Details<span style="color: #000080">&lt;/h4&gt;</span>
+         <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-small pull-right&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Edit<span style="color: #000080">&lt;/a&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-horizontal&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;table</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;table table-border-none verticalThead&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;tbody&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right span4&quot;</span><span style="color: #000080">&gt;</span>Name<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;</span>
+                     <span style="color: #000080">&lt;strong&gt;</span>Linnea&#39;s Cafe<span style="color: #000080">&lt;/strong&gt;</span>
+                  <span style="color: #000080">&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>...<span style="color: #000080">&lt;/tr&gt;</span>
+            <span style="color: #000080">&lt;/tbody&gt;</span>
+         <span style="color: #000080">&lt;/table&gt;</span>
+      <span style="color: #000080">&lt;/form&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #999988; font-style: italic">&lt;!--/.row-fluid--&gt;</span></pre>
+
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="refine-results">
+            <h2>Refine Results &amp; Table Information</h2>
+            <p>When you need a sidebar with input fields and select dropdowns, it requires the same skeleton, just different insides.</p>
+            <ul>
+                <li>The <code>.control-group</code>'s are surrounded by a <code>.form-vertical</code>.</li>
+                <li>The <code>#rightpanel</code> has a <code>.form-horizontal</code> before the<code>table</code>.</li>
+                <li>Make sure to put the <code>thead</code> inside <code>tr.header</code>.</li>
+                <li>To create dropdown, wrap around <code>.dropdown</code>, add <code>.dropdown-toggle</code> with <code>ul.dropdown-menu</code>.</li>
+            </ul>
+            <div class="bs-docs-example">
+            <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <div class="header">
+                        <h4 class="margin0">Refine Results</h4>
+                    </div>
+                    <form class="form-vertical">
+                        <div class="gutter10">
+                            <div class="control-group">
+                                <label class="control-label">Plan Number</label>
+                                <div class="controls">
+                                    <input type="text" class="span12">
+                                </div>
+                            </div><!--/.control-group-->
+                            <div class="control-group">
+                                <label class="control-label">Issuer Name</label>
+                                <div class="controls">
+                                    <select class="span12">
+                                        <option value="#">Select</option>
+                                        <option value="#">Hogwarts</option>
+                                        <option value="#">Gryffindor</option>
+                                        <option value="#">Hufflepuff</option>
+                                        <option value="#">Ravenclaw</option>
+                                        <option value="#">Slytherin</option>
+                                        <option value="#">Forbidden Forest</option>
+                                    </select>
+                                </div>
+                            </div><!--/.control-group-->
+                            <div class="txt-center">
+                                <input type="submit" class="btn input-small" value="Go">
+                            </div>
+                        </div>
+                    </form>
+                </div><!--/.span3-->
+                <div class="span9" id="rightpanel">
+                    <div class="header">
+                        <form class="form-horizontal">
+                        <table class="table verticalThead">
+                            <thead>
+                                <tr class="header">
+                                    <th scope="col"><input type="checkbox"></th>
+                                    <th class="sortable" scope="col"><a href="#">Plan Number</a></th>
+                                    <th class="sortable" scope="col"><a href="#">Issuer Name</a></th>
+                                    <th class="sortable" scope="col"><a href="#">Date</a></th>
+                                    <th class="sortable" scope="col"><a href="#">Status</a></th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">33423</a></td>
+                                    <td><a href="#">Hogwards</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">22412</a></td>
+                                    <td><a href="#">Gryffindor</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">34333</a></td>
+                                    <td><a href="#">Hufflepuff</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">22412</a></td>
+                                    <td><a href="#">Ravenclaw</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">22412</a></td>
+                                    <td><a href="#">Slytherin</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">22412</a></td>
+                                    <td><a href="#">Forbidden Forest</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    </div>
+                    
+                </div><!--/.span9-->
+            </div><!--/.row-fluid-->
+        </div><!--/.bs-docs-->
+
+            <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;row-fluid&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span3&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;sidebar&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;h4</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;margin0&quot;</span><span style="color: #000080">&gt;</span>Refine Results<span style="color: #000080">&lt;/h4&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-vertical&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;gutter10&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-label&quot;</span><span style="color: #000080">&gt;</span>Plan Number<span style="color: #000080">&lt;/label&gt;</span>
+               <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+                  <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span12&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;/div&gt;</span>
+            <span style="color: #000080">&lt;/div&gt;</span>
+            <span style="color: #999988; font-style: italic">&lt;!--/.control-group--&gt;</span>
+            <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-label&quot;</span><span style="color: #000080">&gt;</span>Issuer Name<span style="color: #000080">&lt;/label&gt;</span>
+               <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+                  <span style="color: #000080">&lt;select</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span12&quot;</span><span style="color: #000080">&gt;</span>
+                     <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Select<span style="color: #000080">&lt;/option&gt;</span>
+                     <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Hogwarts<span style="color: #000080">&lt;/option&gt;</span>
+                     <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Gryffindor<span style="color: #000080">&lt;/option&gt;</span>
+                     <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Hufflepuff<span style="color: #000080">&lt;/option&gt;</span>
+                     <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Ravenclaw<span style="color: #000080">&lt;/option&gt;</span>
+                     <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Slytherin<span style="color: #000080">&lt;/option&gt;</span>
+                     <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Forbidden Forest<span style="color: #000080">&lt;/option&gt;</span>
+                  <span style="color: #000080">&lt;/select&gt;</span>
+               <span style="color: #000080">&lt;/div&gt;</span>
+            <span style="color: #000080">&lt;/div&gt;</span>
+            <span style="color: #999988; font-style: italic">&lt;!--/.control-group--&gt;</span>
+         <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;/form&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #999988; font-style: italic">&lt;!--/.span3--&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span9&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;rightpanel&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-horizontal&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;table</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;table table-border-none verticalThead&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;thead&gt;</span>
+                  <span style="color: #000080">&lt;tr</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+                     <span style="color: #000080">&lt;th</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;checkbox&quot;</span><span style="color: #000080">&gt;&lt;/th&gt;</span>
+                     <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sortable&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Plan Number<span style="color: #000080">&lt;/a&gt;&lt;/th&gt;</span>
+                     <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sortable&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Issuer Name<span style="color: #000080">&lt;/a&gt;&lt;/th&gt;</span>
+                     <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sortable&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Date<span style="color: #000080">&lt;/a&gt;&lt;/th&gt;</span>
+                     <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sortable&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Status<span style="color: #000080">&lt;/a&gt;&lt;/th&gt;</span>
+                     <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown pull-right&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-cog&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;/thead&gt;</span>
+               <span style="color: #000080">&lt;tbody&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;checkbox&quot;</span><span style="color: #000080">&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>33423<span style="color: #000080">&lt;/a&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Hogwards<span style="color: #000080">&lt;/a&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>May 6, 2013<span style="color: #000080">&lt;/a&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Certified<span style="color: #000080">&lt;/a&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>
+                           <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-cog&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;caret&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                           <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span><span style="color: #000080">&gt;</span>
+                              <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-pencil&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>
+                                 Edit<span style="color: #000080">&lt;/a&gt;</span>
+                              <span style="color: #000080">&lt;/li&gt;</span>
+                              <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-refresh&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>
+                                 Update Status<span style="color: #000080">&lt;/a&gt;</span>
+                              <span style="color: #000080">&lt;/li&gt;</span>
+                           <span style="color: #000080">&lt;/ul&gt;</span>
+                        <span style="color: #000080">&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>...<span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;/tbody&gt;</span>
+            <span style="color: #000080">&lt;/table&gt;</span>
+         <span style="color: #000080">&lt;/form&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #999988; font-style: italic">&lt;!--/.span9--&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #999988; font-style: italic">&lt;!--/.row-fluid--&gt;</span></pre>
+        </div><!--/.style-group-->
+        
+        
+        <div class="style-group" id="form-actions">
+            <h2>Form Actions</h2>
+            <p>Here are the actions you can take at the bottom of the page and how to float the buttons to align.</p>
+
+            <div class="bs-docs-example">
+                <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <div class="header">
+                        <h4 class="margin0">Refine Results</h4>
+                    </div>
+                    <form class="form-vertical">
+                        <div class="gutter10">
+                            <div class="control-group">
+                                <label class="control-label">Plan Number</label>
+                                <div class="controls">
+                                    <input type="text" class="span12">
+                                </div>
+                            </div><!--/.control-group-->
+                            <div class="control-group">
+                                <label class="control-label">Issuer Name</label>
+                                <div class="controls">
+                                    <select class="span12">
+                                        <option value="#">Select</option>
+                                        <option value="#">Hogwarts</option>
+                                        <option value="#">Gryffindor</option>
+                                        <option value="#">Hufflepuff</option>
+                                        <option value="#">Ravenclaw</option>
+                                        <option value="#">Slytherin</option>
+                                        <option value="#">Forbidden Forest</option>
+                                    </select>
+                                </div>
+                            </div><!--/.control-group-->
+                            <div class="txt-center">
+                                <input type="submit" class="btn input-small" value="Go">
+                            </div>
+                        </div>
+                    </form>
+                </div><!--/.span3-->
+                <div class="span9" id="rightpanel">
+                    <div class="header">
+                        <form class="form-horizontal">
+                        <table class="table verticalThead">
+                            <thead>
+                                <tr class="header">
+                                    <th scope="col"><input type="checkbox"></th>
+                                    <th class="sortable" scope="col"><a href="#">Plan Number</a></th>
+                                    <th class="sortable" scope="col"><a href="#">Issuer Name</a></th>
+                                    <th class="sortable" scope="col"><a href="#">Date</a></th>
+                                    <th class="sortable" scope="col"><a href="#">Status</a></th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">33423</a></td>
+                                    <td><a href="#">Hogwards</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">22412</a></td>
+                                    <td><a href="#">Gryffindor</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">34333</a></td>
+                                    <td><a href="#">Hufflepuff</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">22412</a></td>
+                                    <td><a href="#">Ravenclaw</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">22412</a></td>
+                                    <td><a href="#">Slytherin</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><a href="#">22412</a></td>
+                                    <td><a href="#">Forbidden Forest</a></td>
+                                    <td><a href="#">May 6, 2013</a></td>
+                                    <td><a href="#">Certified</a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                           <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="icon-pencil"></i>
+                                                 Edit</a>
+                                              </li>
+                                              <li><a href="#"><i class="icon-refresh"></i>
+                                                 Update Status</a>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    </div>
+                    
+                </div><!--/.span9-->
+
+            </div>
+            <div class="row-fluid">
+                <div class="form-actions span9 offset3">
+                    <input type="button" class="btn pull-left" value="Cancel">
+                    <input type="button" class="btn btn-primary pull-right" value="Continue">
+                    <input type="button" class="btn pull-right margin10-r" value="Save">
+                </div>
+            </div>
+        </div>
+            <pre class="prettyprint"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;row-fluid&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-actions span9 offset3&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn pull-left&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Cancel&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-primary pull-right&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Continue&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn pull-right margin10-r&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Save&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span></pre>
+        </div>
+
+            </div><!--/.span9-->
+        </div><!--/.row-fluid-->
+
+        </section>  
+
+</div><!--/.container-fluid-->
+
+    <footer class="main-footer">
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+  </body>
+</html>

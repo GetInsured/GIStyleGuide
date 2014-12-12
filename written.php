@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+<!--     <link href="css/gi-base.css" rel="stylesheet"> -->
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+    
+<?php
+    include "nav-bar.php";
+?>
+<div class="section-intro" id="written">
+    <div class="container-fluid">
+        <h1 class="header">Written Style Guides</h1>
+        <p>Keep consistent copy editing throughout the product.</p>
+    </div>
+</div>
+
+
+<div class="container-fluid center-page">    
+      
+    <section class="content" id="top-page">  
+        <div class="row-fluid">
+            <div class="span3">
+                <ol class="chapter">
+                    <li><a href="#grammar">Grammar</a></li>
+                    <li><a href="#style">Style and Tone</a></li>
+                    <li><a href="#rules">Writing Rules</a></li>
+                </ol>
+            </div><!--/.span3-->
+
+            <div class="span9">
+
+            <div class="style-group" id="grammar">
+                <h2>Grammar</h2>
+                <p>Grammar is at the basis of everything we write, so make sure that there are absolutely no grammatical or spelling mistakes. </p>
+                <h3>Basic Grammar</h3>
+                <p>If you have any basic grammar questions, go and check out the <a href="https://owl.english.purdue.edu/owl/">Purdue Owl</a>.</p>
+                <h3>Abbreviations</h3>
+                <p>Some names are long and pesky to read and write, so sometimes, abbreviations are necessary. If you're going to abbreviate something in your writing, make sure to spell out the full name first then provide the abbreviation in parentheses afterwards. Then you can freely use the abbreviation without having to worry about confusing your reader.</p>
+
+                <div class="bs-docs-example">
+                    The North Atlantic Treaty Organization (NATO), is an intergovernmental military alliance based on the North Atlantic Treaty which was signed on 4 April 1949. NATO's headquarters are in Brussels, Belgium, one of the 28 member states across North America and Europe. The combined military spending of all NATO members constitutes over 70% of the global total.
+                </div>
+
+                <p>Do not use abbreviations to shorten common words and phrases. Avoid using:</p>
+                <ul>
+                    <li>e.g.</li>
+                    <li>esp.</li>
+                    <li>i.e.</li>
+                    <li>etc</li>
+                </ul>
+                <p>Write your words out for the most clarity.</p>
+                <div class="prettyprint message note"><strong>NOTE:</strong> The list is definitely not limited to those four. Just try to avoid abbreviating common phrases</div>
+            </div>
+
+            <div class="style-group" id="style">
+                <h2>Style and Tone</h2>
+                <p>GetInsured wants to come off as educational, helpful and informative, so write with those words in mind. Your tone and style defines how the reader sees us as a company, so be sure to make it count. Just follow the general guidelines below. </p>
+                <h3>Tone</h3>
+                <p>Tone is vital to how your reader perceives your writing. Be sure to use the correct tone to get the correct message across. Here are some simple tips to make your writing is more readable.</p>
+                <ul>
+                    <li>Whenever you can, use the active voice, rather than the passive</li>
+                    <li>Use present tense, unless referring to the future event (e.g., future bug fix).</li>
+                    <li>Don't over use phrases, abbreviations, and informal pronouns.</li>
+                    <li>Avoid unnecessary adjectives.</li>
+                </ul>
+                <h3>Short Sentences</h3>
+                <p>Short sentences are easier to read, so try to write sentences of 20 to 30 words rather than much longer ones. Consider breaking a long sentence into two or eliminating unnecessary words. </p>
+                <h3>Short Paragraphs</h3>
+                <p>Avoid long paragraphs or large blocks of text. Long paragraphs are daunting and difficult for readers to scan. Try to write paragraphs of four or five sentences, or approximately 100-125 words. Even paragraphs as short as one sentence are fine. Use bullets to highlight lists of points.</p>
+                <h3>Audience</h3>
+                <p>Consider your audience. The best writers anticipate, and answer, their readers' questions. Identify your intended readers before you begin writing. Think about what they may already know and what they will want to know about your topic. While planning and drafting your content, consider their level of technical expertise, their depth of interest, and the tasks they will be performing with the information you provide. </p>
+
+            </div>
+
+            <div class="style-group" id="general">
+                <h2>Writing Rules</h2>
+                <p>Just a few more things to keep in mind when you are writing for anything GetInsured.</p>
+             
+                <h3>Keep It Simple</h3>
+                <p>The use of complicated vocabulary, expressions and analysis does not impress readers. More often than not it just confuses them. </p>
+                <p>A good question to ask yourself is: “Would everybody in the office understand everything I’ve just ever written?” </p>
+                <p>Things to avoid:</p>
+                <ul>
+                <li>
+                <h4>Jargon</h4>
+                <p>Jargon may be appropriate when writing exclusively for experts. But GetInsured’s web content is accessible to a wide range of readers, from experts on your topic to novices. As much as possible, choose non-technical terms so all your intended readers can understand what you've written. </p>
+               </li>
+               <li>
+                <h4>Repetition</h4>
+                <p>Repetition is simply bad writing. Do not use the same word twice in the one sentence. Never begin two (even three or four) consecutive sentences with the same word. </p>
+                </li>
+                 </ul>
+
+                <h3>Consistency</h3>
+                <p>Good writing is built on patterns, so be consistent within your content.</p>
+                <ul>
+                    <li>Consistent terminology: Don't call it gasoline in some instances and motor gasoline in others. </li>
+                    <li> Consistent abbreviations: If you use PPO for Preferred Provider Organization, don't use any other abbreviation for that reference or switch between the abbreviation and the full name. </li>
+                    <li>Consistent punctuation: For example, always use the serial comma (red, white, and blue).</li>
+                </ul>
+
+                <h3>Don't Be Vague/Passive</h3>
+                <p>Passive writing is just weak. Also stay away from vague expressions that might have two meanings.</p>
+                <div class="bs-docs-example">
+                    <div class="prettyprint message stop"><strong>DON'T: </strong>This <em>would indicate</em> that...</div>
+                    <p>It either does indicate or does not indicate. Right now we have no clue.</p>
+                    <div class="prettyprint message go"><strong>DO: </strong>This <em>indicates</em> that...</div>
+                </div>
+            </div>
+
+            </div><!--/.span9-->
+        </div><!--/.row-fluid-->
+
+    </section>  
+
+</div><!--/.container-fluid-->
+
+    <footer class="main-footer">
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+  </body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+<!--     <link href="css/gi-base.css" rel="stylesheet"> -->
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+    
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <a href="style-guide.html" class="navbar-brand" ><img class="logo" src="images/Get-Insured-Logo-grey.png" alt="GetInsured Logo"></a>
+      
+      <button style="margin-top: 20px" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse">
+      <nav role="navigation">
+            <ul class="sg-style navbar">
+                <li class="top-bar"><a href="css.html">Base CSS</a></li>
+                <li class="top-bar"><a href="layouts.html">Layouts</a></li>
+                <li class="top-bar"><a href="components.html">Components</a></li>
+                <li class="top-bar"><a href="forms.html">Forms</a></li>
+                <li class="top-bar"><a href="themes.html">Themes</a></li>
+                <li class="top-bar"><a href="visuals.html">Visuals</a></li>
+                <li class="top-bar"><a href="written.html">Written Style Guide</a></li>
+                <li class="top-bar"><a href="general.html">Best Practices</a></li>
+            </ul>
+        </nav>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="section-intro" id="forms">
+    <div class="container-fluid">
+        <h1 class="header">Forms and Inputs</h1>
+        <p>Fundamental elements for creating forms and input fields.</p>
+    </div>
+</div>
+
+
+<div class="container-fluid center-page">    
+      
+    <section class="content" id="top-page">  
+        <div class="row-fluid">
+            <div class="span3">
+                <ol class="chapter">
+                    <li><a href="#form-horizontal">Form Horizontal</a></li>
+                    <li><a href="#lables-names">Labels and Name Inputs</a></li>
+                    <li><a href="#input">Input Sizing</a></li>
+                    <li><a href="#checkbox-radio">Checkboxes and Radio Buttons</a></li>
+                    <li><a href="#form-action">Form Actions</a></li>
+                    <li><a href="#select">Selects and Options</a></li>
+                    <li><a href="#form-controls">Extending Form Controls</a></li>
+                    <li><a href="#additional">Additional Form Fields</a></li>
+                </ol>
+            </div><!--/.span3-->
+
+            <div class="span9">
+                
+        <div class="style-group" id="form-horizontal">
+            <h2>Form Horizontal</h2>
+            <p>Individual form controls receive styling, but without any required base class on the <code>&lt;form&gt;</code> or making any large changes in markup.</p>
+
+            <pre class="prettyprint"><span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-horizontal&quot;</span><span style="color: #000080">&gt;</span>...<span style="color: #000080">&lt;/form&gt;</span></pre>
+
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="lables-names">
+            <h2>Labels and Name Inputs</h2>
+            <p>When you have a <code>label</code>, it must be surrounded by a <code>.control-group</code>. For good accessibility practice, you should include a <code>for</code> tag that matches the <code>input</code> <code>id</code>.</p>
+            <ul>
+                <li>Add <code>.form-horizontal</code> to the form</li>
+                <li>Wrap labels and controls in <code>.control-group</code></li>
+                <li>Add <code>.control-label</code> to the label</li>
+                <li>Wrap any associated controls in <code>.controls</code> for proper alignment</li>
+            </ul>
+
+             <div class="bs-docs-example">
+              <form class="form-horizontal">
+                <div class="control-group">
+                  <label class="control-label" for="inputEmail">Email</label>
+                  <div class="controls">
+                    <input type="text" id="inputEmail" placeholder="Email">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputPassword">Password</label>
+                  <div class="controls">
+                    <input type="password" id="inputPassword" placeholder="Password">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="submit" id="submit" value="Login" class="btn btn-primary">
+                  </div>
+                </div>
+              </form>
+              </div><!--/.bs-docs-->
+              <pre class="prettyprint linenums"><span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-horizontal&quot;</span><span style="color: #000080">&gt;</span>
+  <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+    <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-label&quot;</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;inputEmail&quot;</span><span style="color: #000080">&gt;</span>
+     <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;inputEmail&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;Email&quot;</span><span style="color: #000080">&gt;</span>
+     <span style="color: #000080">&lt;/div&gt;</span>
+    <span style="color: #000080">&lt;/label&gt;</span>
+  <span style="color: #000080">&lt;/div&gt;</span>
+  <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+    ...
+  <span style="color: #000080">&lt;/div&gt;</span>
+  <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+    ...
+  <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/form&gt;</span>
+              </pre><!--/.prettyprint-->
+             
+        </div><!--/#labels-->
+
+        <div class="style-group" id="input">
+            <h2>Input Sizing and Placement</h2>
+            <p>Use relative sizing classes like <code>.input-large</code> or match your inputs to the grid column sizes using <code>.span*</code> classes.</p>
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="checkbox-radio">
+            <h2>Checkboxes and Radio Buttons</h2>
+            <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many.  Go ahead and try them below.</p>
+
+            
+
+            <div class="bs-docs-example">
+              <form class="form-horizontal">
+                <div class="control-group">
+                  <strong>Radio Buttons: </strong>
+                  <input class="box-example" type="radio" name="gender" value="Male">Male   
+                  <input class="box-example" type="radio" name="gender" value="Male">Female
+                </div>
+                <div class="control-group">
+                  <strong>Checkboxes: </strong>
+                  <td><input class="box-example" type="checkbox"></td> 1  
+                  <td><input class="box-example" type="checkbox"></td> 2
+                  <td><input class="box-example" type="checkbox"></td> 3 
+                </div>
+              </form>
+            </div> <!--/bs-docs-example-->
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="form-action">
+            <h2>Form Actions</h2>
+            <p>When the user needs to continue, save, go back, or cancel in the flow, the action buttons are positioned as shown within the <code>#rightpanel</code>. There shouldn't be any other buttons on the page when there are form-actions.</p>
+
+            <p>Here are the actions you can take at the bottom of the page and how to float the buttons to align.</p>
+
+            <div class="bs-docs-example">
+                <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <div class="header">
+                        <h4 class="margin0">Refine Results</h4>
+                    </div>
+                    <form class="form-vertical">
+                        <div class="gutter10">
+                            <div class="control-group">
+                                <label class="control-label">Plan Number</label>
+                                <div class="controls">
+                                    <input type="text" class="span12">
+                                </div>
+                            </div><!--/.control-group-->
+                            <div class="control-group">
+                                <label class="control-label">Issuer Name</label>
+                                <div class="controls">
+                                    <select class="span12">
+                                        <option value="#">Select</option>
+                                        <option value="#">Hogwarts</option>
+                                        <option value="#">Gryffindor</option>
+                                        <option value="#">Hufflepuff</option>
+                                        <option value="#">Ravenclaw</option>
+                                        <option value="#">Slytherin</option>
+                                        <option value="#">Forbidden Forest</option>
+                                    </select>
+                                </div>
+                            </div><!--/.control-group-->
+                            <div class="txt-center">
+                                <input type="submit" class="btn input-small" value="Go">
+                            </div>
+                        </div>
+                    </form>
+                </div><!--/.span3-->
+                <div class="span9" id="rightpanel">
+                        <form class="form-horizontal">
+                        <table class="table verticalThead">
+                            <thead>
+                              <tr class="header">
+                                  <th scope="col"><input type="checkbox"></th>
+                                  <th class="sortable" scope="col"><a href="#">Plan Number</a></th>
+                                  <th class="sortable" scope="col"><a href="#">Issuer Name</a></th>
+                                  <th class="sortable" scope="col"><a href="#">Date</a></th>
+                                  <th class="sortable" scope="col"><a href="#">Status</a></th>
+                                  <th>&nbsp;</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">33423</a></td>
+                                  <td><a href="#">Hogwarts</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">22412</a></td>
+                                  <td><a href="#">Gryffindor</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">34333</a></td>
+                                  <td><a href="#">Hufflepuff</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">22412</a></td>
+                                  <td><a href="#">Ravenclaw</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">22412</a></td>
+                                  <td><a href="#">Slytherin</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">22412</a></td>
+                                  <td><a href="#">Forbidden Forest</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </form>
+                    
+                </div><!--/.span9-->
+
+            </div>
+            <div class="row-fluid">
+                <div class="form-actions span9 offset3">
+                    <input type="button" class="btn pull-left" value="Cancel">
+                    <input type="button" class="btn btn-primary pull-right" value="Continue">
+                    <input type="button" class="btn pull-right margin10-r" value="Save">
+                </div>
+            </div>
+        </div>
+            <pre class="prettyprint"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;row-fluid&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-actions span9 offset3&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn pull-left&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Cancel&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-primary pull-right&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Continue&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn pull-right margin10-r&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Save&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span></pre>
+        </div>
+
+
+        <div class="style-group" id="form-action">
+         <h3>Form Errors</h3>
+              <p>When there is a required form field, there must be a red asterisk next to the label along with an alert attached.</p>
+              <div class="bs-docs-example">
+                    <form method="POST" action="#" class="form-horizontal gutter10" id="#">
+                    <div class="control-group">
+                <label class="required control-label">
+                    First Name
+                    <img width="10" height="10" alt="Required!" src="images/requiredAsterix.png" aria-hidden="true"><a><span aria-label="Required!"></span></a>
+                    <span aria-label="Required!"></span>
+                 <span class="aria-hidden">required</span></label><!-- end of label -->
+                <div class="controls">
+                    <input type="text" id="firstName" name="firstName" class="input-large parsley-validated parsley-error validateColor" placeholder="First Name" required="" parsley-error-message="Please Enter First Name" aria-label=" Sample text.  First  Name"><ul id="parsley-2080102921463549" class="parsley-error-list"><li class="custom-error-message" style="display: list-item;"><span class="validation-error-text-container"><em class="validation-error-icon">!</em>Please Enter First Name</span></li></ul>
+                </div><!-- end of controls-->
+                
+            </div>
+            </form>
+                </div><!--/.bs-docs-->
+
+
+
+            <p>An <code>img</code> is used for the red asterisk </p> 
+            <pre class="prettyprint linenums"><span style="color: #000080">&lt;img</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;</span></pre>
+            
+            <p>For the alert, we use a <code>span</code> tag with an exclamation mark and emphasized text.</p>
+            <pre class="prettyprint linenums"><span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;validation-error-text-container&quot;</span><span style="color: #000080">&gt;</span>
+  <span style="color: #000080">&lt;em</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;validation-error-icon&quot;</span><span style="color: #000080">&gt;</span>!<span style="color: #000080">&lt;/em&gt;</span>
+  Please Enter First Name
+<span style="color: #000080">&lt;/span&gt;</span></pre>
+            </pre>
+
+          <div class="prettyprint message qa"><strong>QA:</strong> Make sure these errors are appearing where they should be. Also check if the error message looks like the error pictured above.</div>
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="select">
+            <h2>Selects and Options</h2>
+            <p>Select groups are usually in a dropdown. The default should show either "Default" or the action the user should take.</p>
+
+            <p>For the dropdown, we use the <code>select</code> and <code>option</code> tags</p>
+
+            <div class="bs-docs-example"> 
+              <select>
+                <option value selected>Select a state</option>
+                <option>California</option>
+              </select>
+            </div>
+            <pre class="prettyprint"><span style="color: #000080">&lt;select</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-actions span9 offset3&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;option </span><span style="color: #008080">value selected</span><span style="color: #000080">&gt;</span>Select a state<span style="color: #000080">&lt;/option&gt;</span>
+      <span style="color: #000080">&lt;option</span><span style="color: #000080">&gt;</span>California<span style="color: #000080">&lt;/option&gt;</span>
+      ...
+<span style="color: #000080">&lt;/select&gt;</span></pre>
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="form-controls">
+            <h2>Extending Form Controls</h2>
+            <p>Add text or buttons before or after any text-based input.</p>
+
+            <h3>Default Options</h3>
+            <p>Wrap an <code>.add-on</code> and an <code>input</code> with one of two classes to prepend or append text to an input.</p>
+            <div class="bs-docs-example">
+              <div class="input-prepend">
+                <span class="add-on">Prepend</span>
+                <input class="span8" id="prependedInput" type="text">
+              </div>
+              <div class="input-append">
+                <input class="span8" id="appendedInput" type="text">
+                <span class="add-on">Append</span>
+              </div>
+            </div>
+
+                        <pre class="prettyprint"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-prepend&quot;</span><span style="color: #000080">&gt;</span>
+ <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;add-on&quot;</span><span style="color: #000080">&gt;</span>Prepend<span style="color: #000080">&lt;/span&gt;</span>
+ <span style="color: #000080">&lt;input</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span8&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;prependedInput&quot;</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span><span style="color: #000080">&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-append&quot;</span><span style="color: #000080">&gt;</span>
+  <span style="color: #000080">&lt;input</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span8&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;appendedInput&quot;</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span><span style="color: #000080">&gt;</span>
+  <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;add-on&quot;</span><span style="color: #000080">&gt;</span>Append<span style="color: #000080">&lt;/span&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span></pre>
+
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="additional">
+            <h2>Additional Form Fields</h2>
+            <p>Here are more form fields that could be useful.</p>
+
+            <h3>Phone Number</h3>
+            <p>When including phone numbers, use one input field for the first 9 numbers. Use a separate input field when including an extension.</p>
+
+            <div class="bs-docs-example">
+                    <form method="POST" action="#" class="form-horizontal " id="#">
+                    <div class="control-group">
+                <label class="control-label">
+                    Cell
+                </label><!-- end of label -->
+                <div class="controls">
+                    <input type="text" id="first_phoneNo" name="first_phoneNo" class="phoneNumber input-medium" placeholder="(xxx) xxx-xxxx" aria-label=" Sample text. (xxx) xxx dash xxxx">
+                    <input type="text" id="first_ext" name="first_ext" class="input-mini" placeholder="Ext." aria-label=" Sample text.  Ext dot ">
+                </div><!-- end of controls-->
+            </div>
+            </form>
+                </div><!--/bs-docs-->
+
+            <h3>Social Security Number</h3>
+            <p>Social Security Numbers require 3 separate input fields.</p>
+  <div class="bs-docs-example">
+                    <form class="form-horizontal">
+<div class="control-group">
+                    <label class="required control-label">
+                        Social Security Number
+                        <img width="10" height="10" alt="Required!" src="images/requiredAsterix.png" aria-hidden="true"><a><span aria-label="Required!"></span></a>
+                        <span aria-label="Required!"></span>
+                     <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span></label><!-- end of label -->
+                    <div class="controls">
+                        <div class="pull-left margin5-r">
+                            <label for="ssn1" class="aria-hidden">Tax ID Number first three digits required </label><input required="" parsley-trigger="keyup" parsley-rangelength="[3,3]" placeholder="xxx" class="input-mini" type="text" id="ssn1" name="ssn1" aria-label="Tax ID Number first three digits required  Sample text. xxx">
+                        </div>
+                        <div class="pull-left margin5-r">
+                            <label for="ssn2" class="aria-hidden">Tax ID Number second two digits required </label><input required="" parsley-trigger="keyup" parsley-rangelength="[2,2]" placeholder="xx" class="input-mini" type="text" id="ssn2" name="ssn2" aria-label="Tax ID Number second two digits required  Sample text. xx">
+                        </div>
+                        <div class="pull-left margin5-r">
+                            <label for="ssn3" class="aria-hidden">Tax ID Number last four digits required </label><input required="" parsley-trigger="keyup" parsley-rangelength="[4,4]" placeholder="xxxx" class="input-small" type="text" id="ssn3" name="ssn3" aria-label="Tax ID Number last four digits required  Sample text. xxxx">
+                        </div>
+                        <input class="input61" type="hidden" id="socialSecurityNumber" name="socialSecurityNumber">
+                        <div class="help-inline" id="ssn3_error"></div>
+                    </div><!-- end of controls-->
+                </div>
+            </form>
+                </div><!--bs-docs-->
+            <div class="prettyprint message note" style="margin-top: 10px"><strong>NOTE:</strong> The code for the red asterisk can be found above.</div>
+        </div><!--/.style-group-->
+
+
+       
+
+            </div><!--/.span9-->
+        </div><!--/.row-fluid-->
+
+        </section>  
+
+</div><!--/.container-fluid-->
+
+    <footer class="main-footer">
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+  </body>
+</html>

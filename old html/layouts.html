@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+<!--     <link href="css/gi-base.css" rel="stylesheet">
+ -->    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+    
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <a href="style-guide.html" class="navbar-brand" ><img class="logo" src="images/Get-Insured-Logo-grey.png" alt="GetInsured Logo"></a>
+      
+      <button style="margin-top: 20px" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse">
+      <nav role="navigation">
+            <ul class="sg-style navbar">
+                <li class="top-bar"><a href="css.html">Base CSS</a></li>
+                <li class="top-bar"><a href="layouts.html">Layouts</a></li>
+                <li class="top-bar"><a href="components.html">Components</a></li>
+                <li class="top-bar"><a href="forms.html">Forms</a></li>
+                <li class="top-bar"><a href="themes.html">Themes</a></li>
+                <li class="top-bar"><a href="visuals.html">Visuals</a></li>
+                <li class="top-bar"><a href="written.html">Written Style Guide</a></li>
+                <li class="top-bar"><a href="general.html">Best Practices</a></li>
+            </ul>
+        </nav>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="section-intro" id="layout">
+  <div class="container-fluid">
+    <h1 class="header">Layout and Grid System</h1>
+    <p>Overview of templates and structures.</p>
+  </div>
+</div>
+
+
+<div class="container-fluid center-page">    
+      
+    <section class="content" id="top-page">  
+        <div class="row-fluid">
+            <div class="span3">
+                <ol class="chapter">
+                    <li><a href="#basic-html">Basic HTML Template</a></li>
+                    <li><a href="#grid-system">Grid System</a></li>
+                    <li><a href="#patterns">Screen Patterns</a></li>
+                    <li><a href="#responsive">Responsive Design</a></li>
+                </ol>
+            </div><!--/.span3-->
+
+            <div class="span9">
+
+            <div class="style-group" id="patterns">
+            <h2>Screen Patterns</h2>
+            <p>These are all the templates that display variations in content across multiple appearances in the design while ensuring a consistent visual appearance.</p>
+           
+           <ul class="pattern-image-list">
+             <li><h4>Search Table</h4><img src="images/search-table.jpg" alt="Search Table Image"></li>
+             <li><h4>Table Details</h4><img src="images/table-details.jpg" alt="Table Details Image"></li>
+             <li><h4>Edit Details</h4><img src="images/edit-details.jpg" alt="Edit Details Image"></li>
+             <li><h4>Form Flow</h4><img src="images/form-flow.jpg" alt="Form Flow Image"></li>
+           </ul>
+
+           <div class="prettyprint message pm"><strong>PROJECT MANAGERS:</strong> It is vital that you have all these layouts planned ahead of time. It makes implementation a lot easier.</div>
+           <div class="prettyprint message go"><strong>LOOK:</strong> You aren't confined to just these layouts. Make your own patters that follow the GI style and if it looks good, we'll add it to this guide!</div>
+          </div>
+
+
+         
+                <div class="style-group" id="basic-html">
+                <h2>Basic HTML Template</h2>
+        <p>We make use of certain HTML elements and CSS properties that require the use of HTML5 doctype. Make sure to include it in the beginning of all your projects.</p>
+
+        <pre class="prettyprint lineums"><span style="color: #999999; font-weight: bold">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #000080">&lt;html&gt;</span>
+   <span style="color: #000080">&lt;head&gt;</span>
+      <span style="color: #000080">&lt;title&gt;</span>GetInsured&#39;s Awesome Template<span style="color: #000080">&lt;/title&gt;</span>
+      <span style="color: #000080">&lt;meta</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;viewport&quot;</span> <span style="color: #008080">content=</span><span style="color: #bb8844">&quot;width=device-width, initial-scale=1.0&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #999988; font-style: italic">&lt;!-- Bootstrap --&gt;</span>
+      <span style="color: #000080">&lt;link</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;css/bootstrap.min.css&quot;</span> <span style="color: #008080">rel=</span><span style="color: #bb8844">&quot;stylesheet&quot;</span> <span style="color: #008080">media=</span><span style="color: #bb8844">&quot;screen&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;link</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;css/gi-base.css&quot;</span> <span style="color: #008080">rel=</span><span style="color: #bb8844">&quot;stylesheet&quot;</span> <span style="color: #008080">media=</span><span style="color: #bb8844">&quot;screen&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;/head&gt;</span>
+   <span style="color: #000080">&lt;body&gt;</span>
+      <span style="color: #000080">&lt;h1&gt;</span>Hello, world! Meow.<span style="color: #000080">&lt;/h1&gt;</span>
+      <span style="color: #000080">&lt;script </span><span style="color: #008080">src=</span><span style="color: #bb8844">&quot;http://code.jquery.com/jquery.js&quot;</span><span style="color: #000080">&gt;&lt;/script&gt;</span>
+      <span style="color: #000080">&lt;script </span><span style="color: #008080">src=</span><span style="color: #bb8844">&quot;js/bootstrap.min.js&quot;</span><span style="color: #000080">&gt;&lt;/script&gt;</span>
+   <span style="color: #000080">&lt;/body&gt;</span>
+<span style="color: #000080">&lt;/html&gt;</span></pre>
+
+
+        
+<h4>Code Style</h4>
+<ul>
+    <li>Attribute values should be wrapped in single quotes</li>
+    <li>Paragraphs of text should always be placed in a <code>&lt;p&gt;</code> tag. Never use multiple <code>&lt;br/&gt;</code> tags.</li>
+    <li>List items should always be in <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, or <code>&lt;dl&gt;</code>.</li>
+    <li>Every visible form input should use a <code>&lt;label&gt;</code> tag.</li>
+    <li>All styles should go in the CSS/LESS files and not go inline.</li>
+</ul>
+
+<pre class="prettyprint message stop"><strong>STOP:</strong> This first step is crucial so make sure it's correct. If this doesn't work, nothing will.</pre>
+
+        </div><!--/.style-group-->
+
+        
+
+        <div class="style-group" id="grid-system">
+            <h2>Grid System</h2>
+            <p>As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent). Each row is surrounded by a <code>.row-fluid</code>. This operates as a fluid gridding system for responsive design.</p>
+
+            <div class="bs-docs-example">
+                <div class="row-fluid show-grid">
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                  <div class="span1">1</div>
+                </div>
+
+                <div class="row-fluid show-grid">
+                  <div class="span4">4</div>
+                  <div class="span4">4</div>
+                  <div class="span4">4</div>
+                </div>
+
+                <div class="row-fluid show-grid">
+                  <div class="span4">4</div>
+                  <div class="span8">8</div>
+                </div>
+
+                <div class="row-fluid show-grid">
+                  <div class="span6">6</div>
+                  <div class="span6">6</div>
+                </div>
+
+                <div class="row-fluid show-grid">
+                  <div class="span12">12</div>
+                </div>
+            </div>
+                </div><!--/.style-group-->
+
+          <div class="style-group" id="navigation">
+            <h2>Navigation</h2>
+            <p>There are a few different navigations as the user is logged in or on the home page.</p>
+
+            <h3>Main Navigation</h3>
+            <p>This is the brand navigation. It includes dropdown menus as well as a place to put your logo.</p>
+            <p>Use <code>&lt;ul&gt;</code> and add <code>.nav</code>. Include <code>.dropdown</code> to the <code>&lt;ul&gt;</code> tag for a dropdown menu.</p>
+
+            <div class="bs-docs-example">
+
+                <div class="navbar" id="masthead">
+                    <div class="navbar-inner">
+                        <div class="container">
+                            <button type="button" class="btn btn-navbar" data-toggle="collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#" onclick="return false;"><img class="brand masthead-img">Brand Logo</a>
+                                </li>
+                            </ul>
+                            <div class="nav-collapse collapse pull-right">
+                                <ul class="nav pull-right clearfix">
+                                    <li><a href="#" onclick="return false;">Inbox</a></li>
+                                    <li><a href="#" onclick="return false;">Get Assistance</a></li>
+                                    <li><a href="#" onclick="return false;">My Account</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--bs-docs-->
+            <pre class="prettyprint"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;navbar&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;menu&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#sidebar&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;skip&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;skip-menu&quot;</span> <span style="color: #008080">accesskey=</span><span style="color: #bb8844">&quot;m&quot;</span><span style="color: #000080">&gt;</span>Skip Menu to Side Bar<span style="color: #000080">&lt;/a&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;navbar-inner&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;nav&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown active&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>Panda <span style="color: #000080">&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-caret-down&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;</span>Polar Bear<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #000080">&lt;/ul&gt;</span>
+         <span style="color: #000080">&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown &quot;</span><span style="color: #000080">&gt;</span> ... <span style="color: #000080">&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;/ul&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+  
+            <div class="prettyprint message note"><strong>NOTE:</strong> Make sure your navigation bar is consistent through the whole website.</div>
+
+            <h3>Sub Navigation</h3>
+              <p>When a user is logged in, this menu navigation will show up as the secondary navigation within the product. Including the <code>&lt;a&gt;</code> tag with <code>.skip-menu</code> is good practice for accessibility.</p>
+             <div class="bs-docs-example">           
+              <div class="navbar" id="menu">
+                    <a href="#sidebar" name="skip" class="skip-menu" accesskey="m">Skip Menu to Side Bar</a><div class="navbar-inner">
+                        <ul class="nav">
+                          <li class="dropdown">
+                            <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Panda <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                               <li><a href="#" title="" onclick="return false;">Polar Bear</a></li>
+                               <li><a href="#" title="" onclick="return false;">Brown Bear<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                        <li class="dropdown ">
+                           <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Dolphin <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                             <ul class="dropdown-menu">
+                                <li><a href="#" title="#" onclick="return false;">Blue Whale</a></li>
+                                <li><a href="#" title="#" onclick="return false;">Orca Whale</a></li>
+                                <li><a href="#" title="#" onclick="return false;">Humpback Whale</a></li>
+                                <li><a href="#" title="#" onclick="return false;">Beluga Whale<span class="aria-hidden"> End of dropdown</span></a></li>
+                              </ul>
+                        </li>
+                        <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Tiger <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#" onclick="return false;">Lions<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                         
+                         <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Hummingbird <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#" onclick="return false;">Bees<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                         
+                         <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Salmon <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#"  onclick="return false;">Tuna<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                         
+                         <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Wolf <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#" onclick="return false;">Wirewolf<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                         
+                         <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Rabbit <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#" onclick="return false;">Mouse<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div><!--/.bc-docs-example-->
+              <pre class="prettyprint"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;navbar&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;menu&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#sidebar&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;skip&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;skip-menu&quot;</span> <span style="color: #008080">accesskey=</span><span style="color: #bb8844">&quot;m&quot;</span><span style="color: #000080">&gt;</span>Skip Menu to Side Bar<span style="color: #000080">&lt;/a&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;navbar-inner&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;nav&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown active&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>Panda <span style="color: #000080">&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-caret-down&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;</span>Polar Bear<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+               <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;</span>Brown Bear<span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> End of dropdown<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #000080">&lt;/ul&gt;</span>
+         <span style="color: #000080">&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown &quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>Dolphin <span style="color: #000080">&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-caret-down&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;li&gt;</span>...<span style="color: #000080">&lt;/li&gt;</span>
+            <span style="color: #000080">&lt;/ul&gt;</span>
+         <span style="color: #000080">&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;/ul&gt;</span>
+      <span style="color: #000080">&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;/ul&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+
+
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="pagination">
+            <h2>Pagination</h2>
+            <p>The large block is hard to miss, easily scalable, and provides large click areas. It is wrapped around <code>.txt-center</code>. To make a page active, add <code>.active</code> to the <code>li</code>.</p>
+            <h3>Active Page</h3>
+            <p>If you are on page 1, <code>.disable</code> the first arrow. After the first page, enable it because you will be able to click through.</p>
+            <div class="bs-docs-example">
+<div class="txt-center">
+   <div class="pagination">
+              <ul>
+                <li class="disabled" onclick="return false;"><a href="#">«</a></li>
+                <li class="active" onclick="return false;"><a href="#">1</a></li>
+                <li><a href="#" onclick="return false;">2</a></li>
+                <li><a href="#" onclick="return false;">3</a></li>
+                <li><a href="#" onclick="return false;">4</a></li>
+                <li><a href="#" onclick="return false;">5</a></li>
+                <li><a href="#" onclick="return false;">»</a></li>
+              </ul>
+            </div>
+</div>
+    </div><!--/.bs-docs-->
+<pre class="prettyprint"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-center&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pagination&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;ul&gt;</span>
+         <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;disabled&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>«<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;active&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>1<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>2<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>3<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>4<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>5<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>»<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;/ul&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+
+    <h3>First &amp; Last Pages</h3>
+<div class="bs-docs-example">
+<div class="txt-center">
+            <div class="pagination">
+              <ul>
+                
+                <li><a href="#" onclick="return false;">« First</a></li>
+                <li><a href="#" onclick="return false;">1</a></li>
+                <li class="disabled" onclick="return false;"><a href="#">...</a></li>
+                <li><a href="#" onclick="return false;">10</a></li>
+                <li><a href="#" onclick="return false;">11</a></li>
+                <li><a href="#" onclick="return false;">12</a></li>
+                <li><a href="#" onclick="return false;">13</a></li>
+                <li><a href="#" onclick="return false;">14</a></li>
+                <li><a href="#" onclick="return false;">»</a></li>
+              </ul>
+            </div>
+</div>
+    </div><!--/.bs-docs-->
+            <div class="bs-docs-example">
+                <div class="txt-center">
+                 <div class="pagination">
+                  <ul>
+                    <li><a href="#" onclick="return false;">«</a></li>
+                    <li><a href="#" onclick="return false;">1</a></li>
+                    <li><a href="#" onclick="return false;">2</a></li>
+                    <li><a href="#" onclick="return false;">3</a></li>
+                    <li><a href="#" onclick="return false;">4</a></li>
+                    <li><a href="#" onclick="return false;">5</a></li>
+                    <li class="disabled"><a href="#" onclick="return false;">...</a></li>
+                     <li><a href="#" onclick="return false;">45</a></li>
+                    <li><a href="#" onclick="return false;"> Last »</a></li>
+
+                  </ul>
+                </div>
+            </div>
+            </div><!--/.bs-docs-->
+
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="tables">
+            <h2>Tables</h2>
+            <p>Throughout the product, tables are used to show user information, lists of search results and more.</p>
+
+            <h3>Global Table Structure</h3>
+            <p>Our default grid system includes a <code>#sidebar</code> and <code>#rightpanel</code>. Both are wrapped around a <code>.row-fluid</code>.</p>
+            <h4>Sidebar</h4>
+            <ul>
+                <li>There is always a <code>.span3</code> with an id <code>#sidebar</code> attached to it.</li>
+                <li>The header is wrapped around an <code>h4</code> with <code>.header</code>.</li>
+            </ul>
+
+            <h4>Right Panel</h4>
+            <ul>
+                <li>There is always a <code>.span9</code> with <code>#rightpanel</code> attached to it.</li>
+                <li>The header is wrapped around a <code>div.header</code> and a <code>h4</code> with <code>.header</code>.</li>
+            </ul>
+
+
+            <div class="bs-docs-example">
+            <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <h4>#sidebar</h4>
+                </div>
+
+                <div class="span9" id="rightpanel">
+                    <h4>#rightpanel</h4>
+                </div>
+            </div> 
+          </div>
+          <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;row-fluid&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span3&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;sidebar&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;h4</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>sidebar<span style="color: #000080">&lt;/h4&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span9&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;rightpanel&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;h4</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pull-left&quot;</span><span style="color: #000080">&gt;</span>rightpanel<span style="color: #000080">&lt;/h4&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+
+        <div class="prettyprint message pm"><strong>PM: </strong>Have the structure of the product planned before hand! If you come up with a different structre that works with the GetInsured site, tell us and we'll add it here.</div>
+
+        <h3>Editing Table Details</h3>
+        <p></p>
+
+        </div><!--/.style-group-->
+
+
+        <div class="style-group" id="lables-names">
+            <h2>Labels and Name Inputs</h2>
+            <p>When you have a <code>label</code>, it must be surrounded by a <code>.control-group</code>. For good accessibility practice, you should include a <code>for</code> tag that matches the <code>input</code> <code>id</code>.</p>
+            <ul>
+                <li>Add <code>.form-horizontal</code> to the form</li>
+                <li>Wrap labels and controls in <code>.control-group</code></li>
+                <li>Add <code>.control-label</code> to the label</li>
+                <li>Wrap any associated controls in <code>.controls</code> for proper alignment</li>
+            </ul>
+
+             <div class="bs-docs-example">
+              <form class="form-horizontal">
+                <div class="control-group">
+                  <label class="control-label" for="inputEmail">Email</label>
+                  <div class="controls">
+                    <input type="text" id="inputEmail" placeholder="Email">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputPassword">Password</label>
+                  <div class="controls">
+                    <input type="password" id="inputPassword" placeholder="Password">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="submit" id="submit" value="Login" class="btn btn-primary">
+                  </div>
+                </div>
+              </form>
+              </div><!--/.bs-docs-->
+              <pre class="prettyprint linenums"><span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-horizontal&quot;</span><span style="color: #000080">&gt;</span>
+  <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+    <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-label&quot;</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;inputEmail&quot;</span><span style="color: #000080">&gt;</span>
+     <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;inputEmail&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;Email&quot;</span><span style="color: #000080">&gt;</span>
+     <span style="color: #000080">&lt;/div&gt;</span>
+    <span style="color: #000080">&lt;/label&gt;</span>
+  <span style="color: #000080">&lt;/div&gt;</span>
+  <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+    ...
+  <span style="color: #000080">&lt;/div&gt;</span>
+  <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+    ...
+  <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/form&gt;</span>
+              </pre><!--/.prettyprint-->
+             
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="input">
+            <h2>Input Sizing and Placement</h2>
+            <p>Use relative sizing classes like <code>.input-large</code> or match your inputs to the grid column sizes using <code>.span*</code> classes.</p>
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="checkbox-radio">
+            <h2>Checkboxes and Radio Buttons</h2>
+            <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many.  Go ahead and try them below.</p>
+
+            
+
+            <div class="bs-docs-example">
+              <form class="form-horizontal">
+                <div class="control-group">
+                  <strong>Radio Buttons: </strong>
+                  <input class="box-example" type="radio" name="gender" value="Male">Male   
+                  <input class="box-example" type="radio" name="gender" value="Male">Female
+                </div>
+                <div class="control-group">
+                  <strong>Checkboxes: </strong>
+                  <td><input class="box-example" type="checkbox"></td> 1  
+                  <td><input class="box-example" type="checkbox"></td> 2
+                  <td><input class="box-example" type="checkbox"></td> 3 
+                </div>
+              </form>
+            </div> <!--/bs-docs-example-->
+        </div><!--/.style-group-->
+
+        <div class="style-group" id="form-action">
+            <h2>Form Actions</h2>
+            <p>When the user needs to continue, save, go back, or cancel in the flow, the action buttons are positioned as shown within the <code>#rightpanel</code>. There shouldn't be any other buttons on the page when there are form-actions.</p>
+
+            <p>Here are the actions you can take at the bottom of the page and how to float the buttons to align.</p>
+
+            <div class="bs-docs-example">
+                <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <div class="header">
+                        <h4 class="margin0">Refine Results</h4>
+                    </div>
+                    <form class="form-vertical">
+                        <div class="gutter10">
+                            <div class="control-group">
+                                <label class="control-label">Plan Number</label>
+                                <div class="controls">
+                                    <input type="text" class="span12">
+                                </div>
+                            </div><!--/.control-group-->
+                            <div class="control-group">
+                                <label class="control-label">Issuer Name</label>
+                                <div class="controls">
+                                    <select class="span12">
+                                        <option value="#">Select</option>
+                                        <option value="#">Hogwarts</option>
+                                        <option value="#">Gryffindor</option>
+                                        <option value="#">Hufflepuff</option>
+                                        <option value="#">Ravenclaw</option>
+                                        <option value="#">Slytherin</option>
+                                        <option value="#">Forbidden Forest</option>
+                                    </select>
+                                </div>
+                            </div><!--/.control-group-->
+                            <div class="txt-center">
+                                <input type="submit" class="btn input-small" value="Go">
+                            </div>
+                        </div>
+                    </form>
+                </div><!--/.span3-->
+                <div class="span9" id="rightpanel">
+                        <form class="form-horizontal">
+                        <table class="table verticalThead">
+                            <thead>
+                              <tr class="header">
+                                  <th scope="col"><input type="checkbox"></th>
+                                  <th class="sortable" scope="col"><a href="#">Plan Number</a></th>
+                                  <th class="sortable" scope="col"><a href="#">Issuer Name</a></th>
+                                  <th class="sortable" scope="col"><a href="#">Date</a></th>
+                                  <th class="sortable" scope="col"><a href="#">Status</a></th>
+                                  <th>&nbsp;</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">33423</a></td>
+                                  <td><a href="#">Hogwarts</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">22412</a></td>
+                                  <td><a href="#">Gryffindor</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">34333</a></td>
+                                  <td><a href="#">Hufflepuff</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">22412</a></td>
+                                  <td><a href="#">Ravenclaw</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">22412</a></td>
+                                  <td><a href="#">Slytherin</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="checkbox"></td>
+                                  <td><a href="#">22412</a></td>
+                                  <td><a href="#">Forbidden Forest</a></td>
+                                  <td><a href="#">May 6, 2013</a></td>
+                                  <td><a href="#">Certified</a></td>
+                                  <td>
+                                      <div class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><i class="caret"></i></a>
+                                         <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="icon-pencil"></i>
+                                               Edit</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-refresh"></i>
+                                               Update Status</a>
+                                            </li>
+                                         </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </form>
+                    
+                </div><!--/.span9-->
+
+            </div>
+            <div class="row-fluid">
+                <div class="form-actions span9 offset3">
+                    <input type="button" class="btn pull-left" value="Cancel">
+                    <input type="button" class="btn btn-primary pull-right" value="Continue">
+                    <input type="button" class="btn pull-right margin10-r" value="Save">
+                </div>
+            </div>
+        </div>
+            <pre class="prettyprint"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;row-fluid&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-actions span9 offset3&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn pull-left&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Cancel&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-primary pull-right&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Continue&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn pull-right margin10-r&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Save&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span></pre>
+        </div>
+         <div class="style-group" id="responsive">
+              <h2>Responsive Design</h2>
+              <p>Media queries allow for custom CSS based on a number of conditions such as ratios, widths, and display type, but usually focuses around <code>min-width</code> and <code>max-width</code>.</p>
+
+              <p>The best way to implement a responsive design is using <code>%</code> for the <code>width</code> and <code>height</code> of attributes on the webpage. Using <code>auto</code> is another good way to get a responsive page.</p>
+
+              <div class="prettyprint message stop"><strong>STOP:</strong> Sometimes you don't want the website to be responsive because the text might get all scrunched up. For example, we've set a fixed width for this webpage because the links at the top don't look so good when you make the window smaller. For an example of a fluid, responsive design, go check out <a href="http://www.wikipedia.org">Wikipedia</a>. Resize the window and see how the text move around the page.</div>
+              <div style="margin-top: 10px" class="prettyprint message ui"><strong>UI/UX:</strong> Make sure your images and webpages look good in a wide range of sizes. When users resize their window, we don't want our product looking like a hot mess.</div>
+          </div><!--/.style-group-->
+        </div><!--/.span9-->
+      </div><!--/.row-fluid-->
+            
+
+        </section>  
+
+</div><!--/.container-fluid-->
+
+    <footer class="main-footer">
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+  </body>
+</html>

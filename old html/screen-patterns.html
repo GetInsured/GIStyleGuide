@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/gi-base.css" rel="stylesheet">
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+<nav class="navbar navbar-default sg-style" role="navigation">
+  <div class="container-fluid">
+    <div class="pull-left">
+      <a href="style-guide.html"class="navbar-brand" ><img src="images/Get-Insured-Logo.png" alt="GetInsured Logo"><span>GetInsured Style Guide v1.0</span></a>
+    </div>
+    <ul class="nav navbar-nav pull-right">
+        <li>
+          <a href="interaction-patterns.html">Interaction Patterns</a>
+        </li>
+        <li class="active">
+          <a href="#">Screen Patterns</a>
+        </li>
+        <li>
+          <a href="design-components.html">Design Components</a>
+        </li>
+      </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    
+  	<div class="row-fluid">
+  		<div class="span4">
+        <section class="sidebar-nav">  
+  		  	<nav data-target="#navbar">
+                  <ul>
+                    <!-- <li><a href="interaction-patterns.html" class="nav-primary">Screen Patterns</a> -->
+                    <li><a href="#table-search">Search Table</a>
+                        <ul class="nav-secondary">
+                            <li><a href="#refine-results">Refine Search Results</a></li>
+                            <li><a href="#table-results">Table of Results</a></li>
+                            <li><a href="#pagination">Pagination</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#table-details">Table Details</a>
+                        <ul class="nav-secondary">
+                            <li><a href="#left-nav">Left Navigation</a></li>
+                            <li><a href="#right-details">Right Details</a></li>
+                        </ul>   
+                    </li>
+                    <li><a href="#edit-details">Edit Table Details</a>
+                        <ul class="nav-secondary">
+                            <li><a href="#edit-panel">Edit Panel</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#form-flow">Form Flow</a></li>
+                    <li class="top-page"><a href="#top-page">Back to Top</a></li>
+                  </ul>
+  		  	</nav>
+       </section>   
+	  	</div>
+      
+	  	<div class="span8">
+        <section class="content" id="top-page">  
+    		  <h1>Screen Patterns</h1>
+          <p>These are all the templates that display variations in content across multiple appearances in the design while ensuring a consistent visual appearance.</p>
+         
+         <ul class="pattern-image-list">
+           <li><h4>Search Table</h4><a href="#table-search-header"><img src="images/search-table.jpg" alt="Search Table Image"></a></li>
+           <li><h4>Table Details</h4><a href="#table-details-header"><img src="images/table-details.jpg" alt="Table Details Image"></a></li>
+           <li><h4>Edit Details</h4><a href="#edit-details-header"><img src="images/edit-details.jpg" alt="Edit Details Image"></a></li>
+           <li><h4>Form Flow</h4><a href="#form-flow-header"><img src="images/form-flow.jpg" alt="Form Flow Image"></a></li>
+         </ul>
+
+          <div class="component-group" id="table-search">
+            
+              <h2 id="table-search-header">Search Table</h2>              
+              
+        <div id="refine-results">
+              <h4 class="headline-quiet">Search Table</h4>
+              <h3>Refine Search Results Panel</h3>
+        </div>
+              <div class="bs-docs-example"> 
+                <div class="span3" id="sidebar">
+                  <div class="header">
+                    <h4>Refine Results</h4>
+                  </div>
+                      <form class="form-vertical" id="#" name="#" action="#" method="POST">
+                        <div class="control-group">
+                          <label for="#" class="required control-label">Name</label>
+                            <div class="controls">
+                              <input type="text" name="#" id="#" value="" class="span12" aria-label="# ">
+                              <div id="#" class=""></div>
+                            </div> <!-- end of controls-->
+                        </div><!-- end of control-group -->
+                        <div class="control-group">
+                          <label for="status" class="control-label">Status</label>
+                          <div class="controls">
+                            <select id="#" class="span12" name="#" aria-label="Status">
+                              <option value="">Select</option>
+                               
+                                  <option value="#">Burger</option>
+                               
+                                  <option value="#">Salad</option>
+                               
+                                  <option value="#">Hot Dog</option>
+                               
+                                  <option value="#">Curly Fries</option>
+                               
+                                  <option value="#">French Fries</option>
+                               
+                                  <option value="#">Ice Cream Cupcake</option>
+                                                
+                            </select>
+                          </div> <!-- end of controls-->
+                        </div><!-- end of control-group --> 
+                        <input type="submit" class="btn" value="Go" title="Go">
+                     </form>
+                     <a href="#" class="btn btn-primary" id="#" name="#">Add New Food</a>
+                </div>
+              </div><!--/.bs-docs-example-->      
+              
+              <pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span3&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;sidebar&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;h4&gt;</span>Refine Results<span style="color: #000080">&lt;/h4&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-vertical&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">action=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">method=</span><span style="color: #bb8844">&quot;POST&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;required control-label&quot;</span><span style="color: #000080">&gt;</span>Name<span style="color: #000080">&lt;/label&gt;</span>
+         <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span12&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;# &quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+         <span style="color: #000080">&lt;/div&gt;</span>
+         <span style="color: #999988; font-style: italic">&lt;!-- end of controls--&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #999988; font-style: italic">&lt;!-- end of control-group --&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;status&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-label&quot;</span><span style="color: #000080">&gt;</span>Status<span style="color: #000080">&lt;/label&gt;</span>
+         <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;select</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span12&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Status&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;</span>Select<span style="color: #000080">&lt;/option&gt;</span>
+               <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Burger<span style="color: #000080">&lt;/option&gt;</span>
+               <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Salad<span style="color: #000080">&lt;/option&gt;</span>
+               <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Hot Dog<span style="color: #000080">&lt;/option&gt;</span>
+               <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Curly Fries<span style="color: #000080">&lt;/option&gt;</span>
+               <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>French Fries<span style="color: #000080">&lt;/option&gt;</span>
+               <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Ice Cream Cupcake<span style="color: #000080">&lt;/option&gt;</span>
+            <span style="color: #000080">&lt;/select&gt;</span>
+         <span style="color: #000080">&lt;/div&gt;</span>
+         <span style="color: #999988; font-style: italic">&lt;!-- end of controls--&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #999988; font-style: italic">&lt;!-- end of control-group --&gt;</span> 
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-center&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;submit&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Go&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;Go&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/form&gt;</span>
+   <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-primary&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Add New Food<span style="color: #000080">&lt;/a&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre><!--/#sidebar-->
+  
+  <!--.start of rightpanel-->
+          <div id="table-results">      
+            <h4 class="headline-quiet">Search Table</h4>
+            <h3>Table of Results</h3>
+          </div>    
+              <div class="bs-docs-example">
+                <div class="span9" id="rightpanel">
+   <table class="table">
+      <thead>
+         <tr class="header">
+            <th class="sortable" scope="col" style="width: 175px;"> <a href="#">Name <span class="offScreen">Sortable Descending</span></a></th>
+            <th class="sortable" scope="col"> <a href="#">Date <span class="offScreen">Sortable Descending</span></a></th>
+            <th class="sortable" scope="col"> <a href="#">Last Updated <span class="offScreen">Sortable Descending</span></a></th>
+            <th class="sortable" scope="col"> <a href="#">Status <span class="offScreen">Sortable Descending</span></a></th>
+            <th class="sortable" scope="col"></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td id="#"><a href="#">Goofy</a></td>
+            <td align="center">Apr 11, 2014</td>
+            <td align="center"> Apr 11, 2014</td>
+            <td align="center">Certified</td>
+            <td>
+               <div class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" alt="dropdown toggle"><i class="icon-cog"></i><i class="icon-caret-down"></i><span class="hide">Actions</span><span class="aria-hidden">Update User Infomation  Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                     <li><a href="#"><i class="icon-pencil"></i>Edit</a></li>
+                     <li><a href="#"><i class="icon-refresh"></i>Update Status<span class="aria-hidden"> End of dropdown</span></a></li>
+                  </ul>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td id="name_142"><a href="/hix/admin/issuer/details/142">Donald Duck</a></td>
+            <td align="center">Apr 11, 2014</td>
+            <td align="center"> Apr 11, 2014</td>
+            <td align="center">Certified</td>
+            <td>
+               <div class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" alt="dropdown toggle"><i class="icon-cog"></i><i class="icon-caret-down"></i><span class="hide">Actions</span><span class="aria-hidden">Update User Infomation  Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                     <li><a href="#"><i class="icon-pencil"></i>Edit</a></li>
+                     <li><a href="#"><i class="icon-refresh"></i>Update Status<span class="aria-hidden"> End of dropdown</span></a></li>
+                  </ul>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td id="name_142"><a href="/hix/admin/issuer/details/142">Minnie Mouse</a></td>
+            <td align="center">Apr 11, 2014</td>
+            <td align="center"> Apr 11, 2014</td>
+            <td align="center">Certified</td>
+            <td>
+               <div class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" alt="dropdown toggle"><i class="icon-cog"></i><i class="icon-caret-down"></i><span class="hide">Actions</span><span class="aria-hidden">Update User Infomation  Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                     <li><a href="#"><i class="icon-pencil"></i>Edit</a></li>
+                     <li><a href="#"><i class="icon-refresh"></i>Update Status<span class="aria-hidden"> End of dropdown</span></a></li>
+                  </ul>
+               </div>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+<!--/#rightpanel-->
+              </div><!--/.bs-docs-example-->
+              
+        <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span9&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;rightpanel&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;table</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;table&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;thead&gt;</span>
+         <span style="color: #000080">&lt;tr</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sortable&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span> <span style="color: #008080">style=</span><span style="color: #bb8844">&quot;width: 175px;&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Name <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;offScreen&quot;</span><span style="color: #000080">&gt;</span>Sortable Descending<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;</span>
+            <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sortable&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Date <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;offScreen&quot;</span><span style="color: #000080">&gt;</span>Sortable Descending<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;</span>
+            <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sortable&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Last Updated <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;offScreen&quot;</span><span style="color: #000080">&gt;</span>Sortable Descending<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;</span>
+            <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sortable&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Status <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;offScreen&quot;</span><span style="color: #000080">&gt;</span>Sortable Descending<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;</span>
+            <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;sortable&quot;</span> <span style="color: #008080">scope=</span><span style="color: #bb8844">&quot;col&quot;</span><span style="color: #000080">&gt;&lt;/th&gt;</span>
+         <span style="color: #000080">&lt;/tr&gt;</span>
+      <span style="color: #000080">&lt;/thead&gt;</span>
+      <span style="color: #000080">&lt;tbody&gt;</span>
+         <span style="color: #000080">&lt;tr&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Goofy<span style="color: #000080">&lt;/a&gt;&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">align=</span><span style="color: #bb8844">&quot;center&quot;</span><span style="color: #000080">&gt;</span>Apr 11, 2014<span style="color: #000080">&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">align=</span><span style="color: #bb8844">&quot;center&quot;</span><span style="color: #000080">&gt;</span> Apr 11, 2014<span style="color: #000080">&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">align=</span><span style="color: #bb8844">&quot;center&quot;</span><span style="color: #000080">&gt;</span>Certified<span style="color: #000080">&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td&gt;</span>
+               <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>
+                  <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;dropdown toggle&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-cog&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-caret-down&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;hide&quot;</span><span style="color: #000080">&gt;</span>Actions<span style="color: #000080">&lt;/span&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Update User Infomation  Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+                  <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span> <span style="color: #008080">role=</span><span style="color: #bb8844">&quot;menu&quot;</span> <span style="color: #008080">aria-labelledby=</span><span style="color: #bb8844">&quot;dLabel&quot;</span><span style="color: #000080">&gt;</span>
+                     <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-pencil&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>Edit<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+                     <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-refresh&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>Update Status<span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> End of dropdown<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #000080">&lt;/ul&gt;</span>
+               <span style="color: #000080">&lt;/div&gt;</span>
+            <span style="color: #000080">&lt;/td&gt;</span>
+         <span style="color: #000080">&lt;/tr&gt;</span>
+         <span style="color: #000080">&lt;tr&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;name_142&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;/hix/admin/issuer/details/142&quot;</span><span style="color: #000080">&gt;</span>Donald Duck<span style="color: #000080">&lt;/a&gt;&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">align=</span><span style="color: #bb8844">&quot;center&quot;</span><span style="color: #000080">&gt;</span>Apr 11, 2014<span style="color: #000080">&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">align=</span><span style="color: #bb8844">&quot;center&quot;</span><span style="color: #000080">&gt;</span> Apr 11, 2014<span style="color: #000080">&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">align=</span><span style="color: #bb8844">&quot;center&quot;</span><span style="color: #000080">&gt;</span>Certified<span style="color: #000080">&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td&gt;</span>
+               <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>
+                  <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;dropdown toggle&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-cog&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-caret-down&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;hide&quot;</span><span style="color: #000080">&gt;</span>Actions<span style="color: #000080">&lt;/span&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Update User Infomation  Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+                  <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span> <span style="color: #008080">role=</span><span style="color: #bb8844">&quot;menu&quot;</span> <span style="color: #008080">aria-labelledby=</span><span style="color: #bb8844">&quot;dLabel&quot;</span><span style="color: #000080">&gt;</span>
+                     <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-pencil&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>Edit<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+                     <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-refresh&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>Update Status<span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> End of dropdown<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #000080">&lt;/ul&gt;</span>
+               <span style="color: #000080">&lt;/div&gt;</span>
+            <span style="color: #000080">&lt;/td&gt;</span>
+         <span style="color: #000080">&lt;/tr&gt;</span>
+         <span style="color: #000080">&lt;tr&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;name_142&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;/hix/admin/issuer/details/142&quot;</span><span style="color: #000080">&gt;</span>Minnie Mouse<span style="color: #000080">&lt;/a&gt;&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">align=</span><span style="color: #bb8844">&quot;center&quot;</span><span style="color: #000080">&gt;</span>Apr 11, 2014<span style="color: #000080">&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">align=</span><span style="color: #bb8844">&quot;center&quot;</span><span style="color: #000080">&gt;</span> Apr 11, 2014<span style="color: #000080">&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td</span> <span style="color: #008080">align=</span><span style="color: #bb8844">&quot;center&quot;</span><span style="color: #000080">&gt;</span>Certified<span style="color: #000080">&lt;/td&gt;</span>
+            <span style="color: #000080">&lt;td&gt;</span>
+               <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>
+                  <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;dropdown toggle&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-cog&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-caret-down&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;hide&quot;</span><span style="color: #000080">&gt;</span>Actions<span style="color: #000080">&lt;/span&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Update User Infomation  Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+                  <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span> <span style="color: #008080">role=</span><span style="color: #bb8844">&quot;menu&quot;</span> <span style="color: #008080">aria-labelledby=</span><span style="color: #bb8844">&quot;dLabel&quot;</span><span style="color: #000080">&gt;</span>
+                     <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-pencil&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>Edit<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+                     <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-refresh&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;</span>Update Status<span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> End of dropdown<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #000080">&lt;/ul&gt;</span>
+               <span style="color: #000080">&lt;/div&gt;</span>
+            <span style="color: #000080">&lt;/td&gt;</span>
+         <span style="color: #000080">&lt;/tr&gt;</span>
+      <span style="color: #000080">&lt;/tbody&gt;</span>
+   <span style="color: #000080">&lt;/table&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #999988; font-style: italic">&lt;!--/#rightpanel--&gt;</span>
+</pre>
+
+<div id="pagination">
+    <h4 class="headline-quiet">Search Table</h4>   
+    <h3>Pagination</h3>
+</div>
+    <div class="bs-docs-example">
+<div class="txt-center">
+   <div class="pagination">
+              <ul>
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+</div>
+    </div>
+    
+    <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-center&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pagination&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;ul&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>«<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>1<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>2<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>3<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>4<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>5<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>»<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;/ul&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>   
+          </div><!--#table-search -->
+         
+      <div class="component-group" id="table-details">
+         <h2 id="table-details-header">Table Details</h2>
+        <div id="left-nav">      
+          <h4 class="headline-quiet">Table Details</h4>
+          <h3>Left Navigation</h3>
+        </div>
+          <div class="bs-docs-example">
+            <div class="span3" id="sidebar">
+              <a href="#rightpanel" name="skip" class="skip-sidebar" accesskey="s">Skip Side Bar to Main Content</a><div class="header">
+                       <h4>About This Kitten</h4>
+                    </div>
+                        <ul class="nav nav-list">
+                                <li class="active"><a name="skip">Health Details</a></li>
+                                <li><a href="#">Fur Representative</a></li>
+                                <li><a href="#">Financial Information</a></li>
+                                <li><a href="#">Kitten Profile</a></li>
+                                <li><a href="#">Single Market Profile</a></li>
+                                <li><a href="#">SHOP Market Profile</a></li>
+                                <li><a href="#">Accreditation Documents</a></li>
+                                <li><a href="#">Certification Status</a></li>
+                        </ul>
+              </div>
+          </div><!--/.bs-docs-example-->
+          
+          <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span3&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;sidebar&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#rightpanel&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;skip&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;skip-sidebar&quot;</span> <span style="color: #008080">accesskey=</span><span style="color: #bb8844">&quot;s&quot;</span><span style="color: #000080">&gt;</span>Skip Side Bar to Main Content<span style="color: #000080">&lt;/a&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;h4&gt;</span>About This Kitten<span style="color: #000080">&lt;/h4&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;nav nav-list&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;active&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;skip&quot;</span><span style="color: #000080">&gt;</span>Health Details<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Fur Representative<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Financial Information<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Kitten Profile<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Single Market Profile<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>SHOP Market Profile<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Accreditation Documents<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Certification Status<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+   <span style="color: #000080">&lt;/ul&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre><!--pre-->
+         <!--left navigation-->
+     <div id="right-details">    
+         <h4 class="headline-quiet">Table Details</h4>
+        <h3>Right Details</h3>
+    </div>
+        <div class="bs-docs-example">
+          <div class="span9" id="rightpanel">
+              <div class="header">
+                    <h4 class="pull-left">User Details</h4>
+                    
+                    <a class="btn btn-small pull-right" href="#"> <span class="aria-hidden">Issuer Details </span>Edit</a>
+                </div>
+        
+          <form class="form-horizontal" id="#" name="#" action="#" method="POST">
+            <table class="table table-border-none verticalThead">             
+                <tbody><tr>
+                  <th class="txt-right span4">Name</th>
+                  <td><strong>Insurance Company</strong></td>
+                </tr>
+                <tr>
+                  <th class="txt-right span4">Short Name</th>
+                  <td><strong>Insurance</strong></td>
+                </tr>             
+                <tr>
+                  <th class="txt-right">Company Code</th>
+                  <td><strong>234234234</strong></td>
+                </tr>
+                <tr>
+                  <th class="txt-right">Group Code</th>
+                  <td><strong>234234424</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="txt-right">Federal Employer ID</th>
+                  <td><strong>95-6042390</strong></td>
+                </tr>
+                <tr>
+                  <th class="txt-right">Issuer ID</th>
+                  <td><strong>26075</strong></td>
+                </tr>
+                
+              </tbody>
+            </table><br>
+                        <div class="header">
+                            <h4 class="pull-left">Issuer Address</h4>
+                            <a class="btn btn-small pull-right" href="#"> <span class="aria-hidden">Issuer Details </span>Edit</a>
+                        </div>
+                        <table class="table table-border-none verticalThead">
+                            <tbody><tr>
+                                <th class="txt-right span4">Address line 1</th>
+                                <td><strong>2505 McCabe Way</strong></td>
+                            </tr>
+                            <tr>
+                                <th class="txt-right span4">Address line 2</th>
+                                <td><strong></strong></td>
+                            </tr>
+                            <tr>
+                                <th class="txt-right">City</th>
+                                <td><strong>San Francisco</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="txt-right">State</th>
+                                <td><strong>CA</strong></td>
+                            </tr>
+                            <tr>
+                                <th class="txt-right">Zip Code</th>
+                                <td><strong>94117</strong></td>
+                            </tr>                             
+            </tbody></table>
+        </form>
+      
+    </div>
+        </div>
+        
+        <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span9&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;rightpanel&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;h4</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pull-left&quot;</span><span style="color: #000080">&gt;</span>User Details<span style="color: #000080">&lt;/h4&gt;</span>
+      <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-small pull-right&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Issuer Details <span style="color: #000080">&lt;/span&gt;</span>Edit<span style="color: #000080">&lt;/a&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-horizontal&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">action=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">method=</span><span style="color: #bb8844">&quot;POST&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;profile&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;table</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;table table-border-none verticalThead&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;tbody&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right span4&quot;</span><span style="color: #000080">&gt;</span>Name<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>Insurance Company<span style="color: #000080">&lt;/strong&gt;&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right span4&quot;</span><span style="color: #000080">&gt;</span>Short Name<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>Insurance<span style="color: #000080">&lt;/strong&gt;&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;</span>Company Code<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>234234234<span style="color: #000080">&lt;/strong&gt;&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;</span>Group Code<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>234234424<span style="color: #000080">&lt;/strong&gt;</span>
+                  <span style="color: #000080">&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;</span>Federal Employer ID<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>95-6042390<span style="color: #000080">&lt;/strong&gt;&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;</span>Issuer ID<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>26075<span style="color: #000080">&lt;/strong&gt;&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+            <span style="color: #000080">&lt;/tbody&gt;</span>
+         <span style="color: #000080">&lt;/table&gt;</span>
+         <span style="color: #000080">&lt;br&gt;</span>
+         <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;h4&gt;</span>Issuer Address<span style="color: #000080">&lt;/h4&gt;</span>
+         <span style="color: #000080">&lt;/div&gt;</span>
+         <span style="color: #000080">&lt;table</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;table table-border-none verticalThead&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;tbody&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right span4&quot;</span><span style="color: #000080">&gt;</span>Address line 1<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>2505 McCabe Way<span style="color: #000080">&lt;/strong&gt;&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right span4&quot;</span><span style="color: #000080">&gt;</span>Address line 2<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;</span>City<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>San Francisco<span style="color: #000080">&lt;/strong&gt;</span>
+                  <span style="color: #000080">&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;</span>State<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>CA<span style="color: #000080">&lt;/strong&gt;&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;tr&gt;</span>
+                  <span style="color: #000080">&lt;th</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;</span>Zip Code<span style="color: #000080">&lt;/th&gt;</span>
+                  <span style="color: #000080">&lt;td&gt;&lt;strong&gt;</span>94117<span style="color: #000080">&lt;/strong&gt;&lt;/td&gt;</span>
+               <span style="color: #000080">&lt;/tr&gt;</span>
+            <span style="color: #000080">&lt;/tbody&gt;</span>
+         <span style="color: #000080">&lt;/table&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/form&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+
+        </pre>
+             
+         <!--right details-->              
+    </div><!--/#table-details-->
+    
+    <div class="component-group" id="edit-details">        
+      <h2 id="edit-details-header">Edit Table Details</h2>
+    <div id="edit-panel">    
+        <h4 class="headline-quiet">Edit Table Details</h4>
+        <h3>Edit Panel</h3>
+    </div>
+        <div class="bs-docs-example">
+          <div class="span9" id="rightpanel">
+              <div class="header">
+                    <h4 class="pull-left">Issuer Information</h4>
+                </div>
+        <div class="gutter10">
+          <form class="form-horizontal" id="#" name="#" action="#" method="POST" novalidate="novalidate">
+          <input type="hidden" name="id" id="id" value="6">
+            <table class="table table-border-none"> 
+              <tbody>           
+                <tr>
+                  <td class="txt-right span4"><label for="name">Name <img src="images/requiredAsterix.png" width="10" height="10" alt="Required!" aria-hidden="true"><a><span aria-label="Required!"></span></a></label></td>
+                  <td>
+                    <input type="text" name="name" id="name" class="input-large" value="Health Insurance Company" maxlength="100" aria-required="true" aria-label="Name ">
+                                  <div id="name_error" class=""></div>
+                  </td>
+                </tr> 
+                <tr>
+                  <td class="txt-right span4"><label for="shortName">Issuer Short Name <img src="images/requiredAsterix.png" width="10" height="10" alt="Required!" aria-hidden="true"><a><span aria-label="Required!"></span></a></label></td>
+                  <td>
+                    <input type="text" name="shortName" id="shortName" class="input-large" value="Insurance" maxlength="20" aria-required="true" aria-label="Issuer Short Name ">
+                                  <div id="shortName_error" class=""></div>
+                  </td>
+                </tr>   
+
+                <tr>
+                  <td class="txt-right"><label for="#">Federal Employer ID</label></td>
+                  <td>
+                    <input type="text" name="#" id="#" class="input-large" value="95-6042390" maxlength="15" aria-label="Federal Employer ID">
+                                  <div id="federalEmployerId_error" class=""></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="txt-right"><label for="#">HIOS Issuer ID <img src="images/requiredAsterix.png" width="10" height="10" alt="Required!" aria-hidden="true"><a><span aria-label="Required!"></span></a></label></td>
+                  <td>
+                    <input type="text" name="#" id="#" class="input-large" value="26075" maxlength="5" aria-required="true" aria-label="HIOS Issuer ID ">
+                                  <div id="hiosIssuerId_error" class=""></div>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table><br>
+                        <div class="header">
+                            <h4>Issuer Address</h4>
+                        </div>
+                        <table class="table table-border-none">
+                            <tbody><tr>
+                                <td class="txt-right span4"><label for="addressLine1">Address line 1 <img src="images/requiredAsterix.png" width="10" height="10" alt="Required!" aria-hidden="true"><a><span aria-label="Required!"></span></a></label></td>
+                                <td>
+                                  <input type="text" name="addressLine1" id="addressLine1" class="input-large" value="2505 McCabe Way" maxlength="100" aria-required="true" aria-label="Address line 1 ">
+                                <div id="addressLine1_error" class=""></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt-right span4"><label for="addressLine2">Address line 2</label></td>
+                                <td>
+                                  <input type="text" name="addressLine2" id="addressLine2" class="input-large" value="" maxlength="100" aria-label="Address line 2">
+                                <div id="addressLine2_error" class=""></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt-right"><label for="city">City <img src="images/requiredAsterix.png" width="10" height="10" alt="Required!" aria-hidden="true"><a><span aria-label="Required!"></span></a></label></td>
+                                <td>
+                                  <input type="text" name="city" id="city" class="input-large" value="San Francisco" maxlength="30" aria-required="true" aria-label="City ">
+                                <div id="city_error" class=""></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt-right">
+                                  <label for="state">State <img src="images/requiredAsterix.png" width="10" height="10" alt="Required!" aria-hidden="true"><a><span aria-label="Required!"></span></a> <span class="aria-hidden">required</span></label>
+                                </td>
+                                <td>
+                                  <label for="state" class="hide">State</label>
+                                  <select id="state" name="state" path="statelist" aria-required="true" aria-label="State  requiredState">
+                                     <option value="">Select</option>
+                                     
+                                        <option value="AL">Alabama</option>
+                                    
+                                        <option value="AK">Alaska</option>
+                                    
+                                        <option value="AZ">Arizona</option>
+                                    
+                                        <option value="AR">Arkansas</option>
+                                    
+                                        <option selected="" value="CA">California</option>
+                                    
+                                        <option value="CO">Colorado</option>
+                                    
+                                        <option value="CT">Connecticut</option>
+                                    
+                                        <option value="DE">Delaware</option>
+                                    
+                                        <option value="DC">Dist of Columbia</option>
+                                    
+                                        <option value="FL">Florida</option>
+                                    
+                                        <option value="GA">Georgia</option>
+                                    
+                                        <option value="HI">Hawaii</option>
+                                    
+                                        <option value="ID">Idaho</option>
+                                    
+                                        <option value="IL">Illinois</option>
+                                    
+                                        <option value="IN">Indiana</option>
+                                    
+                                        <option value="IA">Iowa</option>
+                                    
+                                        <option value="KS">Kansas</option>
+                                    
+                                        <option value="KY">Kentucky</option>
+                                    
+                                        <option value="LA">Louisiana</option>
+                                    
+                                        <option value="ME">Maine</option>
+                                    
+                                        <option value="MD">Maryland</option>
+                                    
+                                        <option value="MA">Massachusetts</option>
+                                    
+                                        <option value="MI">Michigan</option>
+                                    
+                                        <option value="MN">Minnesota</option>
+                                    
+                                        <option value="MS">Mississippi</option>
+                                    
+                                        <option value="MO">Missouri</option>
+                                    
+                                        <option value="MT">Montana</option>
+                                    
+                                        <option value="NE">Nebraska</option>
+                                    
+                                        <option value="NV">Nevada</option>
+                                    
+                                        <option value="NH">New Hampshire</option>
+                                    
+                                        <option value="NJ">New Jersey</option>
+                                    
+                                        <option value="NM">New Mexico</option>
+                                    
+                                        <option value="NY">New York</option>
+                                    
+                                        <option value="NC">North Carolina</option>
+                                    
+                                        <option value="ND">North Dakota</option>
+                                    
+                                        <option value="OH">Ohio</option>
+                                    
+                                        <option value="OK">Oklahoma</option>
+                                    
+                                        <option value="OR">Oregon</option>
+                                    
+                                        <option value="PA">Pennsylvania</option>
+                                    
+                                        <option value="RI">Rhode Island</option>
+                                    
+                                        <option value="SC">South Carolina</option>
+                                    
+                                        <option value="SD">South Dakota</option>
+                                    
+                                        <option value="TN">Tennessee</option>
+                                    
+                                        <option value="TX">Texas</option>
+                                    
+                                        <option value="UT">Utah</option>
+                                    
+                                        <option value="VT">Vermont</option>
+                                    
+                                        <option value="VA">Virginia</option>
+                                    
+                                        <option value="WA">Washington</option>
+                                    
+                                        <option value="WV">West Virginia</option>
+                                    
+                                        <option value="WI">Wisconsin</option>
+                                    
+                                        <option value="WY">Wyoming</option>
+                                    
+                                </select>
+                                <div id="state_error"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt-right"><label for="zip">Zip Code <img src="images/requiredAsterix.png" width="10" height="10" alt="Required!" aria-hidden="true"><a><span aria-label="Required!"></span></a></label></td>
+                                <td>
+                                  <input type="text" name="zip" id="zip" class="input-large" value="94117" maxlength="5" aria-required="true" aria-label="Zip Code ">
+                                <div id="zip_error" class=""></div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                      <div class="actions">
+                        <a class="btn btn-primary btn-small pull-right margin5-lr" href="#" onclick="javascript:submitForm();"> <span class="aria-hidden">Issuer Information </span>Save</a>
+                        <a class="btn btn-small pull-right" href="/hix/admin/issuer/details/6"> <span class="aria-hidden">Issuer Information </span>Cancel</a> 
+                    </div>
+        </form>
+      </div>
+    </div><!--/.span9-->
+        </div><!--bs-doc-->
+        
+        <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span9&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;rightpanel&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;h4</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pull-left&quot;</span><span style="color: #000080">&gt;</span>Issuer Information<span style="color: #000080">&lt;/h4&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;gutter10&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-horizontal&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">action=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">method=</span><span style="color: #bb8844">&quot;POST&quot;</span> <span style="color: #008080">novalidate=</span><span style="color: #bb8844">&quot;novalidate&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;hidden&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;id&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;id&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;6&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;profile&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;table</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;table table-border-none&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;tbody&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right span4&quot;</span><span style="color: #000080">&gt;&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;name&quot;</span><span style="color: #000080">&gt;</span>Name <span style="color: #000080">&lt;img</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;&lt;a&gt;&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;name&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;name&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-large&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Health Insurance Company&quot;</span> <span style="color: #008080">maxlength=</span><span style="color: #bb8844">&quot;100&quot;</span> <span style="color: #008080">aria-required=</span><span style="color: #bb8844">&quot;true&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Name &quot;</span><span style="color: #000080">&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;name_error&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right span4&quot;</span><span style="color: #000080">&gt;&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;shortName&quot;</span><span style="color: #000080">&gt;</span>Issuer Short Name <span style="color: #000080">&lt;img</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;&lt;a&gt;&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;shortName&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;shortName&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-large&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;Insurance&quot;</span> <span style="color: #008080">maxlength=</span><span style="color: #bb8844">&quot;20&quot;</span> <span style="color: #008080">aria-required=</span><span style="color: #bb8844">&quot;true&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Issuer Short Name &quot;</span><span style="color: #000080">&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;shortName_error&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Federal Employer ID<span style="color: #000080">&lt;/label&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-large&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;95-6042390&quot;</span> <span style="color: #008080">maxlength=</span><span style="color: #bb8844">&quot;15&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Federal Employer ID&quot;</span><span style="color: #000080">&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;federalEmployerId_error&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>HIOS Issuer ID <span style="color: #000080">&lt;img</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;&lt;a&gt;&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-large&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;26075&quot;</span> <span style="color: #008080">maxlength=</span><span style="color: #bb8844">&quot;5&quot;</span> <span style="color: #008080">aria-required=</span><span style="color: #bb8844">&quot;true&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;HIOS Issuer ID &quot;</span><span style="color: #000080">&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;hiosIssuerId_error&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;/tbody&gt;</span>
+            <span style="color: #000080">&lt;/table&gt;</span>
+            <span style="color: #000080">&lt;br&gt;</span>
+            <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;h4&gt;</span>Issuer Address<span style="color: #000080">&lt;/h4&gt;</span>
+            <span style="color: #000080">&lt;/div&gt;</span>
+            <span style="color: #000080">&lt;table</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;table table-border-none&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;tbody&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right span4&quot;</span><span style="color: #000080">&gt;&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;addressLine1&quot;</span><span style="color: #000080">&gt;</span>Address line 1 <span style="color: #000080">&lt;img</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;&lt;a&gt;&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;addressLine1&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;addressLine1&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-large&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;2505 McCabe Way&quot;</span> <span style="color: #008080">maxlength=</span><span style="color: #bb8844">&quot;100&quot;</span> <span style="color: #008080">aria-required=</span><span style="color: #bb8844">&quot;true&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Address line 1 &quot;</span><span style="color: #000080">&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;addressLine1_error&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right span4&quot;</span><span style="color: #000080">&gt;&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;addressLine2&quot;</span><span style="color: #000080">&gt;</span>Address line 2<span style="color: #000080">&lt;/label&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;addressLine2&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;addressLine2&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-large&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;&quot;</span> <span style="color: #008080">maxlength=</span><span style="color: #bb8844">&quot;100&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Address line 2&quot;</span><span style="color: #000080">&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;addressLine2_error&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;city&quot;</span><span style="color: #000080">&gt;</span>City <span style="color: #000080">&lt;img</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;&lt;a&gt;&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;city&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;city&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-large&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;San Francisco&quot;</span> <span style="color: #008080">maxlength=</span><span style="color: #bb8844">&quot;30&quot;</span> <span style="color: #008080">aria-required=</span><span style="color: #bb8844">&quot;true&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;City &quot;</span><span style="color: #000080">&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;city_error&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;</span>
+                        <span style="color: #000080">&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;state&quot;</span><span style="color: #000080">&gt;</span>State <span style="color: #000080">&lt;img</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;&lt;a&gt;&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;&lt;/a&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;&lt;/label&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;state&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;hide&quot;</span><span style="color: #000080">&gt;</span>State<span style="color: #000080">&lt;/label&gt;</span>
+                        <span style="color: #000080">&lt;select</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;state&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;state&quot;</span> <span style="color: #008080">path=</span><span style="color: #bb8844">&quot;statelist&quot;</span> <span style="color: #008080">aria-required=</span><span style="color: #bb8844">&quot;true&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;State  requiredState&quot;</span><span style="color: #000080">&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;</span>Select<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;AL&quot;</span><span style="color: #000080">&gt;</span>Alabama<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;AK&quot;</span><span style="color: #000080">&gt;</span>Alaska<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;AZ&quot;</span><span style="color: #000080">&gt;</span>Arizona<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;AR&quot;</span><span style="color: #000080">&gt;</span>Arkansas<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">selected=</span><span style="color: #bb8844">&quot;&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;CA&quot;</span><span style="color: #000080">&gt;</span>California<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;CO&quot;</span><span style="color: #000080">&gt;</span>Colorado<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;CT&quot;</span><span style="color: #000080">&gt;</span>Connecticut<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;DE&quot;</span><span style="color: #000080">&gt;</span>Delaware<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;DC&quot;</span><span style="color: #000080">&gt;</span>Dist of Columbia<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;FL&quot;</span><span style="color: #000080">&gt;</span>Florida<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;GA&quot;</span><span style="color: #000080">&gt;</span>Georgia<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;HI&quot;</span><span style="color: #000080">&gt;</span>Hawaii<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;ID&quot;</span><span style="color: #000080">&gt;</span>Idaho<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;IL&quot;</span><span style="color: #000080">&gt;</span>Illinois<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;IN&quot;</span><span style="color: #000080">&gt;</span>Indiana<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;IA&quot;</span><span style="color: #000080">&gt;</span>Iowa<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;KS&quot;</span><span style="color: #000080">&gt;</span>Kansas<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;KY&quot;</span><span style="color: #000080">&gt;</span>Kentucky<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;LA&quot;</span><span style="color: #000080">&gt;</span>Louisiana<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;ME&quot;</span><span style="color: #000080">&gt;</span>Maine<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;MD&quot;</span><span style="color: #000080">&gt;</span>Maryland<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;MA&quot;</span><span style="color: #000080">&gt;</span>Massachusetts<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;MI&quot;</span><span style="color: #000080">&gt;</span>Michigan<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;MN&quot;</span><span style="color: #000080">&gt;</span>Minnesota<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;MS&quot;</span><span style="color: #000080">&gt;</span>Mississippi<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;MO&quot;</span><span style="color: #000080">&gt;</span>Missouri<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;MT&quot;</span><span style="color: #000080">&gt;</span>Montana<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;NE&quot;</span><span style="color: #000080">&gt;</span>Nebraska<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;NV&quot;</span><span style="color: #000080">&gt;</span>Nevada<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;NH&quot;</span><span style="color: #000080">&gt;</span>New Hampshire<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;NJ&quot;</span><span style="color: #000080">&gt;</span>New Jersey<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;NM&quot;</span><span style="color: #000080">&gt;</span>New Mexico<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;NY&quot;</span><span style="color: #000080">&gt;</span>New York<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;NC&quot;</span><span style="color: #000080">&gt;</span>North Carolina<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;ND&quot;</span><span style="color: #000080">&gt;</span>North Dakota<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;OH&quot;</span><span style="color: #000080">&gt;</span>Ohio<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;OK&quot;</span><span style="color: #000080">&gt;</span>Oklahoma<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;OR&quot;</span><span style="color: #000080">&gt;</span>Oregon<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;PA&quot;</span><span style="color: #000080">&gt;</span>Pennsylvania<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;RI&quot;</span><span style="color: #000080">&gt;</span>Rhode Island<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;SC&quot;</span><span style="color: #000080">&gt;</span>South Carolina<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;SD&quot;</span><span style="color: #000080">&gt;</span>South Dakota<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;TN&quot;</span><span style="color: #000080">&gt;</span>Tennessee<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;TX&quot;</span><span style="color: #000080">&gt;</span>Texas<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;UT&quot;</span><span style="color: #000080">&gt;</span>Utah<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;VT&quot;</span><span style="color: #000080">&gt;</span>Vermont<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;VA&quot;</span><span style="color: #000080">&gt;</span>Virginia<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;WA&quot;</span><span style="color: #000080">&gt;</span>Washington<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;WV&quot;</span><span style="color: #000080">&gt;</span>West Virginia<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;WI&quot;</span><span style="color: #000080">&gt;</span>Wisconsin<span style="color: #000080">&lt;/option&gt;</span>
+                           <span style="color: #000080">&lt;option</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;WY&quot;</span><span style="color: #000080">&gt;</span>Wyoming<span style="color: #000080">&lt;/option&gt;</span>
+                        <span style="color: #000080">&lt;/select&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;state_error&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+                  <span style="color: #000080">&lt;tr&gt;</span>
+                     <span style="color: #000080">&lt;td</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;txt-right&quot;</span><span style="color: #000080">&gt;&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;zip&quot;</span><span style="color: #000080">&gt;</span>Zip Code <span style="color: #000080">&lt;img</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;&lt;a&gt;&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;&lt;/td&gt;</span>
+                     <span style="color: #000080">&lt;td&gt;</span>
+                        <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;zip&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;zip&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-large&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;94117&quot;</span> <span style="color: #008080">maxlength=</span><span style="color: #bb8844">&quot;5&quot;</span> <span style="color: #008080">aria-required=</span><span style="color: #bb8844">&quot;true&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Zip Code &quot;</span><span style="color: #000080">&gt;</span>
+                        <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;zip_error&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+                     <span style="color: #000080">&lt;/td&gt;</span>
+                  <span style="color: #000080">&lt;/tr&gt;</span>
+               <span style="color: #000080">&lt;/tbody&gt;</span>
+            <span style="color: #000080">&lt;/table&gt;</span>
+            <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-primary btn-small pull-right margin5-lr&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">onclick=</span><span style="color: #bb8844">&quot;javascript:submitForm();&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Issuer Information <span style="color: #000080">&lt;/span&gt;</span>Save<span style="color: #000080">&lt;/a&gt;</span>
+            <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-small pull-right&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;/hix/admin/issuer/details/6&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Issuer Information <span style="color: #000080">&lt;/span&gt;</span>Cancel<span style="color: #000080">&lt;/a&gt;</span> 
+         <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;/form&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+        </pre>
+    </div><!--#edit-details -->    
+
+
+    <div id="form-flow">
+      <h2 id="form-flow-header">Form Flow</h2>
+      <p>When the user needs to go continue, save or go back in the flow, the action buttons are positioned as shown.</p>
+      <div class="bs-docs-example">
+          <div class="gutter10 clearfix row-fluid">
+            <div class="span3" id="sidebar">
+              <a href="#rightpanel" name="skip" class="skip-sidebar" accesskey="s">Skip Side Bar to Main Content</a><div class="header">
+                       <h4>About This Kitten</h4>
+                    </div>
+                        <ul class="nav nav-list">
+                                <li class="active"><a name="skip">Health Details</a></li>
+                                <li><a href="#">Fur Representative</a></li>
+                                <li><a href="#">Financial Information</a></li>
+                                <li><a href="#">Kitten Profile</a></li>
+                                <li><a href="#">Single Market Profile</a></li>
+                                <li><a href="#">SHOP Market Profile</a></li>
+                                <li><a href="#">Accreditation Documents</a></li>
+                                <li><a href="#">Certification Status</a></li>
+                        </ul>
+              </div>
+
+              <div class="span9" id="rightpanel">
+              <div class="header">
+                    <h4 class="pull-left">User Details</h4>
+                    
+                    <a class="btn btn-small pull-right" href="#"> <span class="aria-hidden">Issuer Details </span>Edit</a>
+                </div>
+        
+          <form class="form-horizontal" id="#" name="#" action="#" method="POST">
+            <table class="table table-border-none verticalThead">             
+                <tbody><tr>
+                  <th class="txt-right span4">Name</th>
+                  <td><strong>Insurance Company</strong></td>
+                </tr>
+                <tr>
+                  <th class="txt-right span4">Short Name</th>
+                  <td><strong>Insurance</strong></td>
+                </tr>             
+                <tr>
+                  <th class="txt-right">Company Code</th>
+                  <td><strong>234234234</strong></td>
+                </tr>
+                <tr>
+                  <th class="txt-right">Group Code</th>
+                  <td><strong>234234424</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="txt-right">Federal Employer ID</th>
+                  <td><strong>95-6042390</strong></td>
+                </tr>
+                <tr>
+                  <th class="txt-right">Issuer ID</th>
+                  <td><strong>26075</strong></td>
+                </tr>
+                
+              </tbody>
+            </table><br>
+                        <div class="header">
+                            <h4 class="pull-left">Issuer Address</h4>
+                            <a class="btn btn-small pull-right" href="#"> <span class="aria-hidden">Issuer Details </span>Edit</a>
+                        </div>
+                        <table class="table table-border-none verticalThead">
+                            <tbody><tr>
+                                <th class="txt-right span4">Address line 1</th>
+                                <td><strong>2505 McCabe Way</strong></td>
+                            </tr>
+                            <tr>
+                                <th class="txt-right span4">Address line 2</th>
+                                <td><strong></strong></td>
+                            </tr>
+                            <tr>
+                                <th class="txt-right">City</th>
+                                <td><strong>San Francisco</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="txt-right">State</th>
+                                <td><strong>CA</strong></td>
+                            </tr>
+                            <tr>
+                                <th class="txt-right">Zip Code</th>
+                                <td><strong>94117</strong></td>
+                            </tr>                             
+            </tbody></table>
+
+        </form>
+      
+    </div><!--#rightpanel-->
+          </div><!--gutter10 clearfix-->
+           <div class="actions">
+            <a class="btn btn-small pull-left margin5-lr" href="#"> <span class="aria-hidden">Back Page </span>Back</a>
+                       
+                        <a class="btn btn-small btn-primary  pull-right" href="#"> <span class="aria-hidden">Continue to More</span>Continue</a> 
+                         <a class="btn btn-small pull-right margin5-lr" href="#"> <span class="aria-hidden">Save Information </span>Save</a>
+                    </div>
+      </div><!--bs-docs-example-->
+
+      <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;actions&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-small pull-left margin5-lr&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Back Page <span style="color: #000080">&lt;/span&gt;</span>Back<span style="color: #000080">&lt;/a&gt;</span>
+   <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-small btn-primary  pull-right&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Continue to More<span style="color: #000080">&lt;/span&gt;</span>Continue<span style="color: #000080">&lt;/a&gt;</span> 
+   <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-small pull-right margin5-lr&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Save Information <span style="color: #000080">&lt;/span&gt;</span>Save<span style="color: #000080">&lt;/a&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span></pre>
+
+    </div>
+
+        </section>  <!--/.content-->
+    	</div><!--/.span8-->
+
+	</div><!--/.row-fluid-->
+
+  <footer>
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+    </script>
+  </body>
+</html>

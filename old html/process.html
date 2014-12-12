@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/gi-base.css" rel="stylesheet">
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+     <link href="css/bootstrap3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.css" rel="stylesheet">
+    <link href="css/bootstrap-theme3.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <a href="style-guide.html" class="navbar-brand" ><img class="logo" src="images/Get-Insured-Logo-grey.png" alt="GetInsured Logo"></a>
+      
+      <button style="margin-top: 20px" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse">
+      <nav role="navigation">
+            <ul class="sg-style navbar">
+                <li class="top-bar"><a href="css.html">Base CSS</a></li>
+                <li class="top-bar"><a href="layouts.html">Layouts</a></li>
+                <li class="top-bar"><a href="components.html">Components</a></li>
+                <li class="top-bar"><a href="forms.html">Forms</a></li>
+                <li class="top-bar"><a href="themes.html">Themes</a></li>
+                <li class="top-bar"><a href="visuals.html">Visuals</a></li>
+                <li class="top-bar"><a href="written.html">Written Style Guide</a></li>
+                <li class="top-bar"><a href="general.html">Best Practices</a></li>
+            </ul>
+        </nav>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="center-page">    
+      
+<section class="content" id="top-page"> 
+    <div class=" container-fluid">
+        <div class="process txt-center">
+            <img src="images/process-illustration.jpg" alt="Process Illustration" width="792" height="1619" usemap="#process-map">
+            
+                <map id="process-map" name="process-map">
+                  <area shape="circle" alt="prototype" coords="165,332, 75" href="forms.html" />
+                  <area shape="circle" alt="pattern-library" coords="650,450, 75" href="components.html" />
+                  <area shape="circle" alt="team-review" coords="187,675, 77" href="#" />
+                  <area shape="circle" alt="begin-eng" coords="185,978, 85" href="#" />
+                  <area shape="rect" alt="team" coords="348,592,555,844" href="#general.html" />
+                  <area shape="circle" alt="qa" coords="186,1222,82" href="#components.html" />
+                  <area shape="circle" alt="ux-review" coords="517,1192,81" href="#components.html" />
+                  <area shape="circle" alt="beer" coords="369,1491,90" href="#" />
+                </map>
+
+            <a href="layouts.html#patterns"><span class="prototype"></span></a>
+        </div>
+        
+    </div><!--/.container-fluid-->
+
+    <div class="guide-footer">
+        <div class="container-fluid">
+        <h2 class="txt-center">Essentials Before You Start</h2>
+            <ul style="margin-top:10px" class="unstyled">
+                <li><h4>Plug &amp; Play/<h4>Whether you're a coding magician or a muggle, you'll be able to copy and paste these snippets into the product and have it working with the existing files.</li>
+                <li><h4>As a Developer</h4>You should have a working knowledge of <a href="http://spring.io/tools/sts" target="_blank">Springsource Toolsuite (STS)</a>, HTML5 and CSS3.</li>
+                <li><h4>Text Editor</h4>If you don't already have a good text editor, <a href="http://www.sublimetext.com/" target="_blank">here's one for you</a>. You're welcome.</li>
+                <li><h4>Good UX/UI Practices</h4>Get aquainted with <a href="general.html">Lean UX practices</a> and it will create a great workflow for everyone.</li>
+            </ul>
+
+        </div><!--/.container-fluid-->
+        <div class="txt-center">
+            <a href="css.html" class="btn btn-primary home ">Let's Get Started</a>
+        </div>
+    </div><!--/.guide-footer-->
+</section>  
+
+</div><!--/.container-fluid-->
+
+    <footer class="main-footer">
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
+
+        <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+
+
+        </script>
+
+
+        <script>
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});
+
+        </script>
+  </body>
+</html>

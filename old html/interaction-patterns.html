@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetInsured Style Guide v1.0</title>
+
+    <!-- Bootstrap -->
+
+<!--     <link href="css/bootstrap_nm.css" rel="stylesheet">--> 
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap2.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/gi-base.css" rel="stylesheet">
+    <link href="css/style-guide.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">    
+<nav class="navbar navbar-default sg-style" role="navigation">
+  <div class="container-fluid">
+    <div class="pull-left">
+      <a href="style-guide.html"class="navbar-brand" ><img src="images/Get-Insured-Logo.png" alt="GetInsured Logo"><span>GetInsured Style Guide v1.0</span></a>
+    </div>
+    <ul class="nav navbar-nav pull-right">
+        <li class="active">
+          <a href="interaction-patterns.html">Interaction Patterns</a>
+        </li>
+        <li>
+          <a href="screen-patterns.html">Screen Patterns</a>
+        </li>
+        <li>
+          <a href="design-components.html">Design Components</a>
+        </li>
+      </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    
+  	<div class="row-fluid">
+      <div class="span4">
+        <section class="sidebar-nav">  
+          <nav data-target="#navbar">
+                <ul>
+                    <li><a href="#navigation">Navigation</a>
+                        <ul class="nav-secondary">
+                          <li><a href="#main-nav">Main Navigation</a></li>
+                            <li><a href="#sub-nav">Sub Navigation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#forms">Forms</a>
+                        <ul class="nav-secondary">
+                            <li><a href="#form-login">Login</a></li>
+                            <li><a href="#form-error">Errors</a></li>
+                            <!-- <li><a href="#form-calendar">Calendars</a></li> -->
+                            <li><a href="#form-phone">Phone Numbers</a></li>
+                            <li><a href="#form-radio-btn">Radio Buttons</a></li>
+                            <li><a href="#form-ssn">Social Security Number</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#modals">Modals</a></li>
+                    <li><a href="#accordions">Accordions</a></li>
+                    <li><a href="#alerts">Alerts &amp; Notifications</a>
+                        <ul class="nav-secondary">
+                            <li><a href="#alert-default">Alert Default</a></li>
+                            <li><a href="#alert-success">Alert Success</a></li>
+                            <li><a href="#alert-error">Alert Error</a></li>
+                            <li><a href="#alert-info">Alert Info</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li class="top-page"><a href="#top-page">Back to Top</a></li>
+                </ul>
+          </nav>
+       </section>   
+      </div>
+      
+	  	<div class="span8">
+        <section class="content" id="top-page">  
+    		  <h1>Interaction Patterns</h1>
+        <p>Here are reusable components of a page to provide navigation, alerts and more.</p>
+        <div class="component-group" id="navigation">  
+          <h2>Navigation</h2>
+          <p>There are a few different navigations as the user is logged in or on the home page.</p>
+          <div id="main-nav">  
+            <h4 class="headline-quiet">Navigation</h4>
+            <h3>Main Navigation</h3>
+            <p>This is the brand navigation. It includes dropdown menus as well as a place to put your logo.</p>
+            <p>Use <code>&lt;ul&gt;</code> and add <code>.nav</code>. Include <code>.dropdown</code> to the <code>&lt;ul&gt;</code> tag for a dropdown menu.</p>
+
+            
+            <div class="bs-docs-example">
+            <div class="navbar" id="masthead" role="banner">
+   <input type="hidden" id="#" value="#">
+   <div class="navbar-inner">
+      <div class="container">
+         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         </button>      
+         <ul class="nav">
+            <li>
+               <a href="#">Brand of Bunnies<span style="display: none;">Brand</span></a>
+            </li>
+         </ul>
+         <div class="nav-collapse collapse pull-right">
+            <ul class="nav pull-right clearfix" id="#">
+               <li><a href="#menu" name="skip" class="skip-nav" accesskey="n">Skip Navigation</a></li>
+               <li id="masthead-inbox"><a href="#">Inbox</a></li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Get Assistance <b class="caret"></b><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="#" target="_blank">Help Center<span class="aria-hidden"> End of dropdown</span></a></li>
+                  </ul>
+               </li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <b class="caret"></b><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                  <ul class="dropdown-menu">
+                     <li id="#"><a href="#">Account Settings</a></li>
+                     <li id="#"><a href="#">Dashboard</a></li>
+                     <li><a href="#">Logout<span class="aria-hidden"> End of dropdown</span></a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- container ends -->  
+   </div>
+   <!-- navbar-inner ends --> 
+</div>
+            </div><!--bs-docs-->
+            
+            <pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;navbar navbar-inverse&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;masthead&quot;</span> <span style="color: #008080">role=</span><span style="color: #bb8844">&quot;banner&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;hidden&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;navbar-inner&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;container&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;button</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-navbar&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;collapse&quot;</span> <span style="color: #008080">data-target=</span><span style="color: #bb8844">&quot;.nav-collapse&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-bar&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;</span>
+         <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-bar&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;</span>
+         <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-bar&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;</span>
+         <span style="color: #000080">&lt;/button&gt;</span>      
+         <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;nav&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;li&gt;</span>
+               <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Brand of Bunnies<span style="color: #000080">&lt;span</span> <span style="color: #008080">style=</span><span style="color: #bb8844">&quot;display: none;&quot;</span><span style="color: #000080">&gt;</span>Brand of Bunnies<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #000080">&lt;/li&gt;</span>
+         <span style="color: #000080">&lt;/ul&gt;</span>
+         <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;nav-collapse collapse pull-right&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;nav pull-right clearfix&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;second-menu-nm&quot;</span><span style="color: #000080">&gt;</span>
+               <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#menu&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;skip&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;skip-nav&quot;</span> <span style="color: #008080">accesskey=</span><span style="color: #bb8844">&quot;n&quot;</span><span style="color: #000080">&gt;</span>Skip Navigation<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+               <span style="color: #000080">&lt;li</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;masthead-inbox&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Inbox<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+               <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>
+                  <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Get Assistance <span style="color: #000080">&lt;b</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;caret&quot;</span><span style="color: #000080">&gt;&lt;/b&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+                  <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span><span style="color: #000080">&gt;</span>
+                     <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">target=</span><span style="color: #bb8844">&quot;_blank&quot;</span><span style="color: #000080">&gt;</span>Help Center<span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> End of dropdown<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #000080">&lt;/ul&gt;</span>
+               <span style="color: #000080">&lt;/li&gt;</span>
+               <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>
+                  <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>My Account <span style="color: #000080">&lt;b</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;caret&quot;</span><span style="color: #000080">&gt;&lt;/b&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+                  <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span><span style="color: #000080">&gt;</span>
+                     <span style="color: #000080">&lt;li</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Account Settings<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+                     <span style="color: #000080">&lt;li</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Dashboard<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+                     <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Logout<span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> End of dropdown<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #000080">&lt;/ul&gt;</span>
+               <span style="color: #000080">&lt;/li&gt;</span>
+            <span style="color: #000080">&lt;/ul&gt;</span>
+         <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #999988; font-style: italic">&lt;!-- container ends --&gt;</span>  
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #999988; font-style: italic">&lt;!-- navbar-inner ends --&gt;</span> 
+<span style="color: #000080">&lt;/div&gt;</span>
+            </pre>
+            
+          </div>
+          
+          <div id="sub-nav">
+            <h4 class="headline-quiet">Navigation</h4>
+              <h3>Sub Navigation</h3>
+              <p>When a user is logged in, this menu navigation will show up as the secondary navigation within the product.</p>
+             <div class="bs-docs-example">           
+              <div class="navbar" id="menu">
+                    <a href="#sidebar" name="skip" class="skip-menu" accesskey="m">Skip Menu to Side Bar</a><div class="navbar-inner">
+                        <ul class="nav">
+                          <li class="dropdown active">
+                            <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Panda <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                               <li><a href="#" title="">Polar Bear</a></li>
+                               <li><a href="#" title="">Brown Bear<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                        <li class="dropdown ">
+                           <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Dolphin <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                             <ul class="dropdown-menu">
+                                <li><a href="#" title="#">Blue Whale</a></li>
+                                <li><a href="#" title="#">Orca Whale</a></li>
+                                <li><a href="#" title="#">Humpback Whale</a></li>
+                                <li><a href="#" title="#">Beluga Whale<span class="aria-hidden"> End of dropdown</span></a></li>
+                              </ul>
+                        </li>
+                        <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Tiger <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#">Lions<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                         
+                         <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Hummingbird <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#">Bees<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                         
+                         <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Salmon <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#">Tuna<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                         
+                         <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Wolf <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#">Wirewolf<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                         
+                         <li class="dropdown ">
+                          <a href="#" title="#" class="dropdown-toggle" data-toggle="dropdown">Rabbit <i class="icon-caret-down"></i><span class="aria-hidden"> Dropdown Menu. Press enter to open it and tab through its options</span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" title="#">Mouse<span class="aria-hidden"> End of dropdown</span></a></li>
+                            </ul>
+                         </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div><!--/.bc-docs-example-->
+              
+
+<!-- HTML generated using hilite.me --><pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;navbar&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;menu&quot;</span><span style="color: #000080">&gt;</span>
+    <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#sidebar&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;skip&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;skip-menu&quot;</span> <span style="color: #008080">accesskey=</span><span style="color: #bb8844">&quot;m&quot;</span><span style="color: #000080">&gt;</span>Skip Menu to Side Bar<span style="color: #000080">&lt;/a&gt;&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;navbar-inner&quot;</span><span style="color: #000080">&gt;</span>
+        <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;nav navPhixbar&quot;</span><span style="color: #000080">&gt;</span>
+            <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown active&quot;</span><span style="color: #000080">&gt;</span>
+                <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>Panda <span style="color: #000080">&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-caret-down&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+                <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span><span style="color: #000080">&gt;</span>
+                    <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;</span>Polar Bears<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;&quot;</span><span style="color: #000080">&gt;</span>Brown Bear<span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> End of dropdown<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                <span style="color: #000080">&lt;/ul&gt;</span>
+            <span style="color: #000080">&lt;/li&gt;</span>
+            
+            <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown &quot;</span><span style="color: #000080">&gt;</span>
+                <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;dropdown&quot;</span><span style="color: #000080">&gt;</span>Dolphin <span style="color: #000080">&lt;i</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;icon-caret-down&quot;</span><span style="color: #000080">&gt;&lt;/i&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> Dropdown Menu. Press enter to open it and tab through its options<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;</span>
+                <span style="color: #000080">&lt;ul</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;dropdown-menu&quot;</span><span style="color: #000080">&gt;</span>
+                    <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Blue Whale<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Orca Whale<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Humpback Whale<span style="color: #000080">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span style="color: #000080">&lt;li&gt;&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">title=</span><span style="color: #bb8844">&quot;#&quot;</span><span style="color: #000080">&gt;</span>Beluga Whale<span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span> End of dropdown<span style="color: #000080">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                <span style="color: #000080">&lt;/ul&gt;</span>
+            <span style="color: #000080">&lt;/li&gt;</span>
+...       
+        <span style="color: #000080">&lt;/ul&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+<!--/pre-->
+          </div>
+       
+      </div> <!--#navigation--> 
+      
+          <div class="component-group" id="forms">
+            <h2>Forms</h2>
+            <p>Individual form controls receive styling, but without any required base class on the <code>&lt;form&gt;</code> or large changes in markup. In most cases, forms use the class<code>.form-horizontal</code> within the <code>&lt;form&gt;</code> tag.</p>
+            <p>When you have a <code>label</code>, it must be surrounded by a <code>.control-group</code>. For good accessibility practice, you should include a <code>for</code> tag that matches the <code>input</code> <code>id</code>.</p>
+
+            <pre class="prettyprint linums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-label&quot;</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;inputEmail&quot;</span><span style="color: #000080">&gt;</span>Email<span style="color: #000080">&lt;/label&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;inputEmail&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;Email&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span></pre>
+
+            <div id="form-login">
+              <h4 class="headline-quiet">Forms</h4>
+              <h3>Login</h3>
+              <p>The login form is used globally.</p>
+              <div class="bs-docs-example">
+              <form class="form-horizontal">
+                <div class="control-group">
+                  <label class="control-label" for="inputEmail">Email</label>
+                  <div class="controls">
+                    <input type="text" id="inputEmail" placeholder="Email">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputPassword">Password</label>
+                  <div class="controls">
+                    <input type="password" id="inputPassword" placeholder="Password">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                        <div class="clearfix">
+                            <label class="checkbox inline"> 
+                                <input type="checkbox" name="_spring_security_remember_me" id="_spring_security_remember_me" tabindex="0"> <span>
+                                Remember Me</span> 
+                            </label>
+                        </div>
+                        <input type="submit" id="submit" value="Login" class="btn btn-primary">
+                        </div>
+                </div>
+              </form>
+              </div>
+              
+              <pre class="prettyprint linenums"><span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-horizontal&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-label&quot;</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;inputEmail&quot;</span><span style="color: #000080">&gt;</span>Email<span style="color: #000080">&lt;/label&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;inputEmail&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;Email&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-label&quot;</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;inputPassword&quot;</span><span style="color: #000080">&gt;</span>Password<span style="color: #000080">&lt;/label&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;password&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;inputPassword&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;Password&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;checkbox&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;checkbox&quot;</span><span style="color: #000080">&gt;</span> Remember me
+         <span style="color: #000080">&lt;/label&gt;</span>
+         <span style="color: #000080">&lt;button</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;submit&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn&quot;</span><span style="color: #000080">&gt;</span>Sign in<span style="color: #000080">&lt;/button&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/form&gt;</span>
+              </pre>
+              
+            </div>
+            <!--#form-fields-->
+            
+            <div id="form-error">
+                <h4 class="headline-quiet">Forms</h4>
+                <h3>Errors</h3>
+                <p>When there is a required form field, there must be a red asterisk next to the label along with an alert attached.</p>
+                <p>
+                
+                <div class="bs-docs-example">
+                    <form method="POST" action="#" class="form-horizontal gutter10" id="#">
+                    <div class="control-group">
+                <label class="required control-label">
+                    First Name
+                    <img width="10" height="10" alt="Required!" src="images/requiredAsterix.png" aria-hidden="true"><a><span aria-label="Required!"></span></a>
+                    <span aria-label="Required!"></span>
+                 <span class="aria-hidden">required</span></label><!-- end of label -->
+                <div class="controls">
+                    <input type="text" id="firstName" name="firstName" class="input-large parsley-validated parsley-error validateColor" placeholder="First Name" required="" parsley-error-message="Please Enter First Name" aria-label=" Sample text.  First  Name"><ul id="parsley-2080102921463549" class="parsley-error-list"><li class="custom-error-message" style="display: list-item;"><span class="validation-error-text-container"><em class="validation-error-icon">!</em>Please Enter First Name</span></li></ul>
+                </div><!-- end of controls-->
+                
+            </div>
+            </form>
+                </div>
+                <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;required control-label&quot;</span><span style="color: #000080">&gt;</span>
+   First Name
+   <span style="color: #000080">&lt;img</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;&lt;a&gt;&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+   <span style="color: #000080">&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;</span>
+   <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;&lt;/label&gt;</span><span style="color: #999988; font-style: italic">&lt;!-- end of label --&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;firstName&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;firstName&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-large parsley-validated parsley-error validateColor&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;First Name&quot;</span> <span style="color: #008080">required=</span><span style="color: #bb8844">&quot;&quot;</span> <span style="color: #008080">parsley-error-message=</span><span style="color: #bb8844">&quot;Please Enter First Name&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot; Sample text.  First  Name&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;ul</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;parsley-2080102921463549&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;parsley-error-list&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;li</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;custom-error-message&quot;</span> <span style="color: #008080">style=</span><span style="color: #bb8844">&quot;display: list-item;&quot;</span><span style="color: #000080">&gt;&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;validation-error-text-container&quot;</span><span style="color: #000080">&gt;&lt;em</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;validation-error-icon&quot;</span><span style="color: #000080">&gt;</span>!<span style="color: #000080">&lt;/em&gt;</span>Please Enter First Name<span style="color: #000080">&lt;/span&gt;&lt;/li&gt;</span>
+      <span style="color: #000080">&lt;/ul&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #999988; font-style: italic">&lt;!-- end of controls--&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+                </pre>
+            </div>
+           <!--  
+            <div id="form-calendar">
+                <h4 class="headline-quiet">Forms</h4>
+                <h3>Calendars</h3>
+                
+                <div class="bs-docs-example">
+                    
+                </div>
+                <pre class="prettyprint lineums">
+                    
+                </pre>
+            </div> -->
+            
+            <div id="form-phone">
+                <h4 class="headline-quiet">Forms</h4>
+                <h3>Phone Numbers</h3>
+                <p>When including phone numbers, use one input field for the first 9 numbers. Use a separate input field when including an extension.</p>
+                <div class="bs-docs-example">
+                    <form method="POST" action="#" class="form-horizontal " id="#">
+                    <div class="control-group">
+                <label class="control-label">
+                    Cell
+                </label><!-- end of label -->
+                <div class="controls">
+                    <input type="text" id="first_phoneNo" name="first_phoneNo" class="phoneNumber input-medium" placeholder="(xxx) xxx-xxxx" aria-label=" Sample text. (xxx) xxx dash xxxx">
+                    <input type="text" id="first_ext" name="first_ext" class="input-mini" placeholder="Ext." aria-label=" Sample text.  Ext dot ">
+                </div><!-- end of controls-->
+            </div>
+            </form>
+                </div>
+                <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-label&quot;</span><span style="color: #000080">&gt;</span>
+   Cell
+   <span style="color: #000080">&lt;/label&gt;</span><span style="color: #999988; font-style: italic">&lt;!-- end of label --&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;first_phoneNo&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;first_phoneNo&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;phoneNumber input-medium&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;(xxx) xxx-xxxx&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot; Sample text. (xxx) xxx dash xxxx&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;first_ext&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;first_ext&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-mini&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;Ext.&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot; Sample text.  Ext dot &quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #999988; font-style: italic">&lt;!-- end of controls--&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span></pre>
+            </div>
+            
+
+
+            <div id="form-radio-btn">
+                <h4 class="headline-quiet">Forms</h4>
+                <h3>Radio Buttons</h3>
+               <p>When there are a group of questions, there should be an <code>h4</code> with a <code>.header</code> class.</p>
+                <div class="bs-docs-example">
+                  <div class="span9" id="rightpanel">
+   <div class="header">
+      <h4 class="pull-left">Questions for Bears</h4>
+   </div>
+   <form class="form-horizontal" id="#" name="#" action="#" method="POST">
+      <p class="gutter10">
+                <strong>
+                    Do you eat honey every day?
+                </strong>
+            </p>
+            <div class="control-group margin10-l">
+                <label>
+                    <input type="radio" id="displayAuthRepresentativeInfo" name="authorizedRepresentativeIndicator" value="yes" onchange="displayAuthInfo();">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" id="hideAuthRepresentativeInfo" name="authorizedRepresentativeIndicator" value="no" checked="checked" onchange="displayAuthInfo();">
+                    No
+                </label> 
+            </div>
+
+        <p class="gutter10">
+                <strong>
+                    Would you rather eat salmon after you hibernate?
+                </strong>
+            </p>
+            <div class="control-group margin10-l">
+                <label>
+                    <input type="radio" id="displayAuthRepresentativeInfo" name="authorizedRepresentativeIndicator" value="yes" onchange="displayAuthInfo();">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" id="hideAuthRepresentativeInfo" name="authorizedRepresentativeIndicator" value="no" checked="checked" onchange="displayAuthInfo();">
+                    No
+                </label> 
+            </div>
+   </form>
+</div>
+                </div>
+                <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;span9&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;rightpanel&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;header&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;h4</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pull-left&quot;</span><span style="color: #000080">&gt;</span>Questions for Bears<span style="color: #000080">&lt;/h4&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;form</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;form-horizontal&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">action=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">method=</span><span style="color: #bb8844">&quot;POST&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;p</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;gutter10&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;strong&gt;</span>
+         Do you eat honey every day?
+         <span style="color: #000080">&lt;/strong&gt;</span>
+      <span style="color: #000080">&lt;/p&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group margin10-l&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;label&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;radio&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;displayAuthRepresentativeInfo&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;authorizedRepresentativeIndicator&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;yes&quot;</span> <span style="color: #008080">onchange=</span><span style="color: #bb8844">&quot;displayAuthInfo();&quot;</span><span style="color: #000080">&gt;</span>
+         Yes
+         <span style="color: #000080">&lt;/label&gt;</span>
+         <span style="color: #000080">&lt;label&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;radio&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;hideAuthRepresentativeInfo&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;authorizedRepresentativeIndicator&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;no&quot;</span> <span style="color: #008080">checked=</span><span style="color: #bb8844">&quot;checked&quot;</span> <span style="color: #008080">onchange=</span><span style="color: #bb8844">&quot;displayAuthInfo();&quot;</span><span style="color: #000080">&gt;</span>
+         No
+         <span style="color: #000080">&lt;/label&gt;</span> 
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;p</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;gutter10&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;strong&gt;</span>
+         Would you rather eat salmon after you hibernate?
+         <span style="color: #000080">&lt;/strong&gt;</span>
+      <span style="color: #000080">&lt;/p&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group margin10-l&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;label&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;radio&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;displayAuthRepresentativeInfo&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;authorizedRepresentativeIndicator&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;yes&quot;</span> <span style="color: #008080">onchange=</span><span style="color: #bb8844">&quot;displayAuthInfo();&quot;</span><span style="color: #000080">&gt;</span>
+         Yes
+         <span style="color: #000080">&lt;/label&gt;</span>
+         <span style="color: #000080">&lt;label&gt;</span>
+         <span style="color: #000080">&lt;input</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;radio&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;hideAuthRepresentativeInfo&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;authorizedRepresentativeIndicator&quot;</span> <span style="color: #008080">value=</span><span style="color: #bb8844">&quot;no&quot;</span> <span style="color: #008080">checked=</span><span style="color: #bb8844">&quot;checked&quot;</span> <span style="color: #008080">onchange=</span><span style="color: #bb8844">&quot;displayAuthInfo();&quot;</span><span style="color: #000080">&gt;</span>
+         No
+         <span style="color: #000080">&lt;/label&gt;</span> 
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/form&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span></pre>
+            </div>
+            
+
+            <div id="form-ssn">
+                <h4 class="headline-quiet">Forms</h4>
+                <h3>Social Security Numbers</h3>
+                <p>Social Security Numbers require 3 separate input fields.</p>
+                <div class="bs-docs-example">
+                    <form class="form-horizontal">
+<div class="control-group">
+                    <label class="required control-label">
+                        Social Security Number
+                        <img width="10" height="10" alt="Required!" src="images/requiredAsterix.png" aria-hidden="true"><a><span aria-label="Required!"></span></a>
+                        <span aria-label="Required!"></span>
+                     <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span> <span class="aria-hidden">required</span></label><!-- end of label -->
+                    <div class="controls">
+                        <div class="pull-left margin5-r">
+                            <label for="ssn1" class="aria-hidden">Tax ID Number first three digits required </label><input required="" parsley-trigger="keyup" parsley-rangelength="[3,3]" placeholder="xxx" class="input-mini" type="text" id="ssn1" name="ssn1" aria-label="Tax ID Number first three digits required  Sample text. xxx">
+                        </div>
+                        <div class="pull-left margin5-r">
+                            <label for="ssn2" class="aria-hidden">Tax ID Number second two digits required </label><input required="" parsley-trigger="keyup" parsley-rangelength="[2,2]" placeholder="xx" class="input-mini" type="text" id="ssn2" name="ssn2" aria-label="Tax ID Number second two digits required  Sample text. xx">
+                        </div>
+                        <div class="pull-left margin5-r">
+                            <label for="ssn3" class="aria-hidden">Tax ID Number last four digits required </label><input required="" parsley-trigger="keyup" parsley-rangelength="[4,4]" placeholder="xxxx" class="input-small" type="text" id="ssn3" name="ssn3" aria-label="Tax ID Number last four digits required  Sample text. xxxx">
+                        </div>
+                        <input class="input61" type="hidden" id="socialSecurityNumber" name="socialSecurityNumber">
+                        <div class="help-inline" id="ssn3_error"></div>
+                    </div><!-- end of controls-->
+                </div>
+            </form>
+                </div><!--bs-docs-->
+
+               <pre class="prettyprint lineums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;control-group&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;label</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;required control-label&quot;</span><span style="color: #000080">&gt;</span>
+   Social Security Number
+   <span style="color: #000080">&lt;img</span> <span style="color: #008080">width=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">height=</span><span style="color: #bb8844">&quot;10&quot;</span> <span style="color: #008080">alt=</span><span style="color: #bb8844">&quot;Required!&quot;</span> <span style="color: #008080">src=</span><span style="color: #bb8844">&quot;images/requiredAsterix.png&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;&lt;a&gt;&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+   <span style="color: #000080">&lt;span</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Required!&quot;</span><span style="color: #000080">&gt;&lt;/span&gt;</span>
+   <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;</span> <span style="color: #000080">&lt;span</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>required<span style="color: #000080">&lt;/span&gt;&lt;/label&gt;</span><span style="color: #999988; font-style: italic">&lt;!-- end of label --&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;controls&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pull-left margin5-r&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;ssn1&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Tax ID Number first three digits required <span style="color: #000080">&lt;/label&gt;&lt;input</span> <span style="color: #008080">required=</span><span style="color: #bb8844">&quot;&quot;</span> <span style="color: #008080">parsley-trigger=</span><span style="color: #bb8844">&quot;keyup&quot;</span> <span style="color: #008080">parsley-rangelength=</span><span style="color: #bb8844">&quot;[3,3]&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;xxx&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-mini&quot;</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;ssn1&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;ssn1&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Tax ID Number first three digits required  Sample text. xxx&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pull-left margin5-r&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;ssn2&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Tax ID Number second two digits required <span style="color: #000080">&lt;/label&gt;&lt;input</span> <span style="color: #008080">required=</span><span style="color: #bb8844">&quot;&quot;</span> <span style="color: #008080">parsley-trigger=</span><span style="color: #bb8844">&quot;keyup&quot;</span> <span style="color: #008080">parsley-rangelength=</span><span style="color: #bb8844">&quot;[2,2]&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;xx&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-mini&quot;</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;ssn2&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;ssn2&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Tax ID Number second two digits required  Sample text. xx&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;pull-left margin5-r&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;label</span> <span style="color: #008080">for=</span><span style="color: #bb8844">&quot;ssn3&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;aria-hidden&quot;</span><span style="color: #000080">&gt;</span>Tax ID Number last four digits required <span style="color: #000080">&lt;/label&gt;&lt;input</span> <span style="color: #008080">required=</span><span style="color: #bb8844">&quot;&quot;</span> <span style="color: #008080">parsley-trigger=</span><span style="color: #bb8844">&quot;keyup&quot;</span> <span style="color: #008080">parsley-rangelength=</span><span style="color: #bb8844">&quot;[4,4]&quot;</span> <span style="color: #008080">placeholder=</span><span style="color: #bb8844">&quot;xxxx&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input-small&quot;</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;text&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;ssn3&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;ssn3&quot;</span> <span style="color: #008080">aria-label=</span><span style="color: #bb8844">&quot;Tax ID Number last four digits required  Sample text. xxxx&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;input</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;input61&quot;</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;hidden&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;socialSecurityNumber&quot;</span> <span style="color: #008080">name=</span><span style="color: #bb8844">&quot;socialSecurityNumber&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;help-inline&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;ssn3_error&quot;</span><span style="color: #000080">&gt;&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #999988; font-style: italic">&lt;!-- end of controls--&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+                </pre>
+            </div>
+
+          </div>
+          <!--#forms-->
+          
+          
+          <div class="component-group" id="modals">
+            <h2>Modals</h2>
+            <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+            <div class="bs-docs-example">
+            <div class="modal" style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>Modal header</h3>
+              </div>
+              <div class="modal-body">
+                <p>One fine body…</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn">Close</a>
+                <a href="#" class="btn btn-primary">Save changes</a>
+              </div>
+            </div>
+            </div>
+            
+            <pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;modal hide fade&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;modal-header&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;button</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;close&quot;</span> <span style="color: #008080">data-dismiss=</span><span style="color: #bb8844">&quot;modal&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;</span>×<span style="color: #000080">&lt;/button&gt;</span>
+      <span style="color: #000080">&lt;h3&gt;</span>Modal header<span style="color: #000080">&lt;/h3&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;modal-body&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;p&gt;</span>One fine body…<span style="color: #000080">&lt;/p&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;modal-footer&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn&quot;</span><span style="color: #000080">&gt;</span>Close<span style="color: #000080">&lt;/a&gt;</span>
+      <span style="color: #000080">&lt;a</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-primary&quot;</span><span style="color: #000080">&gt;</span>Save changes<span style="color: #000080">&lt;/a&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+            </pre>
+        
+            <h4 class="headline-quiet">Modals</h4>
+            <h3>Live Demo</h3>
+            <p>Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.</p>
+            <div class="bs-docs-example">
+                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
+            </div>
+            <pre class="prettyprint linenums"><span style="color: #000080">&lt;a</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;modal&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#myModal&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-primary btn-large&quot;</span><span style="color: #000080">&gt;</span>Launch demo modal<span style="color: #000080">&lt;/a&gt;</span>
+            
+<span style="color: #999988; font-style: italic">&lt;!-- Modal --&gt;</span>
+<span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;myModal&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;modal hide fade&quot;</span> <span style="color: #008080">tabindex=</span><span style="color: #bb8844">&quot;-1&quot;</span> <span style="color: #008080">role=</span><span style="color: #bb8844">&quot;dialog&quot;</span> <span style="color: #008080">aria-labelledby=</span><span style="color: #bb8844">&quot;myModalLabel&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;modal-header&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;button</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;close&quot;</span> <span style="color: #008080">data-dismiss=</span><span style="color: #bb8844">&quot;modal&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;</span>×<span style="color: #000080">&lt;/button&gt;</span>
+      <span style="color: #000080">&lt;h3</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;myModalLabel&quot;</span><span style="color: #000080">&gt;</span>Modal header<span style="color: #000080">&lt;/h3&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;modal-body&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;p&gt;</span>One fine body…<span style="color: #000080">&lt;/p&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;modal-footer&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;button</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn&quot;</span> <span style="color: #008080">data-dismiss=</span><span style="color: #bb8844">&quot;modal&quot;</span> <span style="color: #008080">aria-hidden=</span><span style="color: #bb8844">&quot;true&quot;</span><span style="color: #000080">&gt;</span>Close<span style="color: #000080">&lt;/button&gt;</span>
+      <span style="color: #000080">&lt;button</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;btn btn-primary&quot;</span><span style="color: #000080">&gt;</span>Save changes<span style="color: #000080">&lt;/button&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+            
+          </div>
+          <!--#modals-->
+          
+          <div class="component-group" id="accordions">
+            
+              <h2>Accordions</h2>
+              <p>Using the collapse plugin, we built a simple accordion style widget.</p>
+              <p>Just add <code>data-toggle="collapse"</code> and a <code>data-target</code> to element to assign control of a collapsible element.</p>
+              <div class="bs-docs-example">
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                        Sheldon
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      Leonard
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                        Penny
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              
+              <pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion&quot;</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;accordion2&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-group&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-heading&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;collapse&quot;</span> <span style="color: #008080">data-parent=</span><span style="color: #bb8844">&quot;#accordion2&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#collapseOne&quot;</span><span style="color: #000080">&gt;</span>
+         Sheldon
+         <span style="color: #000080">&lt;/a&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;collapseOne&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-body collapse in&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-inner&quot;</span><span style="color: #000080">&gt;</span>
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+         <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-group&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-heading&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;collapse&quot;</span> <span style="color: #008080">data-parent=</span><span style="color: #bb8844">&quot;#accordion2&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#collapseTwo&quot;</span><span style="color: #000080">&gt;</span>
+         Leonard
+         <span style="color: #000080">&lt;/a&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;collapseTwo&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-body collapse&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-inner&quot;</span><span style="color: #000080">&gt;</span>
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+         <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-group&quot;</span><span style="color: #000080">&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-heading&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;a</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-toggle&quot;</span> <span style="color: #008080">data-toggle=</span><span style="color: #bb8844">&quot;collapse&quot;</span> <span style="color: #008080">data-parent=</span><span style="color: #bb8844">&quot;#accordion2&quot;</span> <span style="color: #008080">href=</span><span style="color: #bb8844">&quot;#collapseThree&quot;</span><span style="color: #000080">&gt;</span>
+         Penny
+         <span style="color: #000080">&lt;/a&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;div</span> <span style="color: #008080">id=</span><span style="color: #bb8844">&quot;collapseThree&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-body collapse&quot;</span><span style="color: #000080">&gt;</span>
+         <span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;accordion-inner&quot;</span><span style="color: #000080">&gt;</span>
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+         <span style="color: #000080">&lt;/div&gt;</span>
+      <span style="color: #000080">&lt;/div&gt;</span>
+   <span style="color: #000080">&lt;/div&gt;</span>
+<span style="color: #000080">&lt;/div&gt;</span>
+              </pre>
+              
+          </div><!--#Accordions -->
+          
+          <div class="component-group" id="alerts">
+            
+              <h2>Alerts &amp; Notifications</h2>
+              <p>Wrap any text and an optional dismiss button in <code>.alert</code> for a basic warning alert message.</p>
+            
+            <div id="alert-default">
+              <h4 class="headline-quiet">Alerts</h4>
+              <h3>Alert Default</h3>
+              <p>Add the class <code>.alert</code> for an alert.</p>
+            </div>
+            
+              <div class="bs-docs-example">
+                <div class="alert">
+                  <button type="button" class="close" data-dismiss="alert">×</button>
+                  <strong>Warning!</strong> Watch out for the kitty cat!
+                </div>
+              </div>
+              
+              <pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;alert&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;button</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;close&quot;</span> <span style="color: #008080">data-dismiss=</span><span style="color: #bb8844">&quot;alert&quot;</span><span style="color: #000080">&gt;</span>×<span style="color: #000080">&lt;/button&gt;</span>
+   <span style="color: #000080">&lt;strong&gt;</span>Warning!<span style="color: #000080">&lt;/strong&gt;</span> Watch out for the kitty cat!
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+              
+              
+            <div id="alert-success">
+              <h4 class="headline-quiet">Alerts</h4>
+              <h3>Alert Success</h3>
+              <p>Add the class <code>.alert-success</code> for a successful alert.</p>
+            </div>
+            
+              <div class="bs-docs-example">
+                <div class="alert alert-success">
+                  <button type="button" class="close" data-dismiss="alert">×</button>
+                  <strong>Well done!</strong> You found the kitty cat.
+                </div>
+              </div>
+              <pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;alert alert-success&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;button</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;close&quot;</span> <span style="color: #008080">data-dismiss=</span><span style="color: #bb8844">&quot;alert&quot;</span><span style="color: #000080">&gt;</span>×<span style="color: #000080">&lt;/button&gt;</span>
+   <span style="color: #000080">&lt;strong&gt;</span>Well done!<span style="color: #000080">&lt;/strong&gt;</span> You found the kitty cat.
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+             
+             <div id="alert-error">
+              <h4 class="headline-quiet">Alerts</h4>
+              <h3>Alert Error</h3>
+              <p>Add the class <code>.alert-error</code> for an error alert.</p>
+            </div>
+            
+              <div class="bs-docs-example">
+                <div class="alert alert-error">
+                  <button type="button" class="close" data-dismiss="alert">×</button>
+                  <strong>Oh snap!</strong> The kitty cat ran away!
+                </div>
+              </div>
+              <pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;alert alert-error&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;button</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;close&quot;</span> <span style="color: #008080">data-dismiss=</span><span style="color: #bb8844">&quot;alert&quot;</span><span style="color: #000080">&gt;</span>×<span style="color: #000080">&lt;/button&gt;</span>
+   <span style="color: #000080">&lt;strong&gt;</span>Oh snap!<span style="color: #000080">&lt;/strong&gt;</span> The kitty cat ran away!
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+                
+            <div id="alert-info">
+              <h4 class="headline-quiet">Alerts</h4>
+              <h3>Alert Info</h3>
+              <p>Add the class <code>.alert-info</code> for an info alert.</p>
+            </div>
+              <div class="bs-docs-example">
+                <div class="alert alert-info">
+                  <button type="button" class="close" data-dismiss="alert">×</button>
+                  <strong>Heads up!</strong> The kitty cat needs food, but not too much because he's already fat.
+                </div>
+              </div>
+              <pre class="prettyprint linenums"><span style="color: #000080">&lt;div</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;alert alert-info&quot;</span><span style="color: #000080">&gt;</span>
+   <span style="color: #000080">&lt;button</span> <span style="color: #008080">type=</span><span style="color: #bb8844">&quot;button&quot;</span> <span style="color: #008080">class=</span><span style="color: #bb8844">&quot;close&quot;</span> <span style="color: #008080">data-dismiss=</span><span style="color: #bb8844">&quot;alert&quot;</span><span style="color: #000080">&gt;</span>×<span style="color: #000080">&lt;/button&gt;</span>
+   <span style="color: #000080">&lt;strong&gt;</span>Heads up!<span style="color: #000080">&lt;/strong&gt;</span> The kitty cat needs food, but not too much because he&#39;s already fat.
+<span style="color: #000080">&lt;/div&gt;</span>
+</pre>
+              
+              
+          </div><!--#Alerts &amp; Notifications -->
+                   
+        </section>  
+    	</div>
+
+	</div>
+
+
+    <footer>
+        <p>Made with <i class="icon-heart"></i> from the GI UI Team.</p>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+        $("#accordion2").collapse();
+        $('#element').tooltip('show');
+
+    </script>
+
+  </body>
+</html>
