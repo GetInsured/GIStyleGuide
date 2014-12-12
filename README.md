@@ -3,7 +3,7 @@ GIStyleGuide - [Webiste](http://gistyleguide.appspot.com/)
 
 HTML-CSS-JS Style guide for development purpose
 
-Install / Set up use Google App Engine (GAE)
+Install / Set up
 ==========
 1. Open your favor termimal application
 2. ```git clone https://github.com/GetInsured/GIStyleGuide.git```
